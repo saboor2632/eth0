@@ -1,0 +1,1189 @@
+[
+    {
+        "title": "Implementing a Secure Title Deed Registration Model for Land Transactions in Blockchain",
+        "authors": [
+            "E. Chesang",
+            "Nelson Masese",
+            "Peter Rugiri"
+        ],
+        "published_year": 2024,
+        "abstract": "The purpose of this study was to implement a secure title deed registration model for land transactions in blockchain. The non-existence of a universal National Land Information Management System in Kenya has generated inconsistencies in land transactions, thus creating a need for a secure title deed registration model for land transactions. The study adopted a proof of concept (PoC) methodology to demonstrate the concept of using blockchain technology to resolve existing challenges currently experienced in land transactions. The outcome of the PoC methodology was the design of a model that was later evaluated for implementation. The design architecture of the model was based on Ethereum, an open-source, decentralised blockchain platform used to establish a peer-to-peer network that securely executes and verifies an application code referred to as a smart contract that enables network users to execute land transactions amongst themselves with no trusted central authority. Selected users evaluated the designed model against the metrics set out by the study. Upon model evaluation, its results provided a trail of non–immutable and verifiable land transaction records visible to all the parties involved. The land transaction records were securely distributed across the peer-to-peer network, providing participants with visibility of all the transaction data. Therefore, the model implemented in the study demonstrated that blockchain technology has an immense potential of executing secure and transparent land transactions across Kenya. This study recommends that future research should explore implementation strategies and regulatory frameworks for integrating blockchain technology into land registration.",
+        "url": "https://www.semanticscholar.org/paper/052f59110902e3f79f1db1c5d5edc2be0110cd57",
+        "citations": 0,
+        "venue": "Journal of Computational Science and Technology"
+    },
+    {
+        "title": "Emerging trends and performance measurement of cryptocurrency research during 2013–2022: a systematic review based on computational mapping",
+        "authors": [
+            "Swagota Saikia",
+            "Alka Maurya",
+            "Manoj Kumar Verma"
+        ],
+        "published_year": 2024,
+        "abstract": "\nPurpose\nThe emergence of cryptocurrencies has tremendously changed the way of financial transactions around the world which has led to form distinct discussions in the field regarding its reliability. This paper aims to evaluate the published literatures on cryptocurrency identifying its growth, citation, prolific authors, journals, countries, active funding agencies, collaboration pattern and emerging research hotspots in the area.\n\n\nDesign/methodology/approach\nScientometrics and Altmetrics parameters have been incorporated in the study. Literatures covered from the Scopus database searching within “Article Title, Abstract, Keywords” with keywords “cryptocurrency” OR “digital currency” OR “bitcoin” OR “Ethereum” by limiting the time range of 2013–2022, English language and journal articles only. Total 6,107 documents have been identified. The further analysis and visualisation is performed using MSExcel, VOSviewer, Biblioshiny and Tableau. Another tool, Dimension.ai is used to identify the Altmetric Attention Score.\n\n\nFindings\nThe findings reveal that the growth of research and citation rate hiked from the year 2017 till now. Elie Bouri is the top contributor, IEEE Access is the most prolific journal, China being the prolific country. Topics like Blockchain, Bitcoin, Ethereum, smart contracts, financial markets are emerging researched hotspots. The reliability of crypto market is still not clear because of its high volatility. The findings of the study will be more useful in the academia, subject specialists, research institutions, funding agencies, publishing agencies in decision-making.\n\n\nOriginality/value\nTo the best of the authors’ knowledge, there is no such study found considering both Scientometrics and Altmetrics approaches on cryptocurrency research with the selected time bound.\n",
+        "url": "https://www.semanticscholar.org/paper/d06c323467eb7a267a6a811584ba18799543b9cf",
+        "citations": 1,
+        "venue": "Global Knowledge Memory and Communication"
+    },
+    {
+        "title": "Cryptocurrency as an investment or speculation: a bibliometric review study",
+        "authors": [
+            "Sakshi Vasudeva"
+        ],
+        "published_year": 2023,
+        "abstract": "PurposeThe study was done to review the existing literature available on the theme using a popular technique known as a bibliometric review. The purpose was to explore important bibliometric trends such as geographical distribution of research; the most relevant countries and institutions and important collaboration networks, frequently published authors, the most relevant topics/research domains and relationships among these, average citations or per year, the most relevant sources, top authors’ production, authors’ impact by H index and the progression of important keywords over a period of time.Design/methodology/approachThe study analyzed literature published in the English language from 2012 onwards that used the words “cryptocurrency”, “Ethereum” “Bitcoin” along with “investment/s” or “speculation/s” in the Title/ABS/KEY. A specialized approach was followed to retrieve and analyze focused research. The data for analysis was extracted from the Scopus database and was analyzed using Biblioshiny and VOSViewer.FindingsThe study found that the countries such as the UK, Australia, China and the USA have special relevance in terms of the number of citations and collaboration networks. Cryptocurrency/Cryptocurrencies, bitcoin have been the base themes along with other crucial issues such as volatility, hedging, COVID-19 pandemic, Ethereum, blockchain, co-integration, portfolio diversification/optimization, spillover, safe haven, investor attention, gold, etc. There is a lot of interdisciplinary research on the theme.Originality/valueThe current study used a concentrated approach to study the bibliometric literature about the financial implications of cryptocurrency as an asset class and not prominently its technological or legal aspects.",
+        "url": "https://www.semanticscholar.org/paper/a714e1398c2482b9a22af647c250d1038b045f1d",
+        "citations": 3,
+        "venue": "Business Analyst Journal"
+    },
+    {
+        "title": "Blockchain-Powered Land Ownership Management System",
+        "authors": [
+            "V. Srikanth",
+            "P. Venkata Sai Varma",
+            "M. Sunitha",
+            "T. Sai Revant",
+            "T. Rishik"
+        ],
+        "published_year": 2023,
+        "abstract": "The project involves using Block chain technology and non-fungible tokens (NFTs) to manage assets such as residential, commercial, and agricultural lands. Traditional methods of tracking ownership of these assets require long and complex processes, including the need to obtain title deeds from government offices. The proposed system aims to simplify this process by providing a secure and verifiable way to represent ownership of assets through the use of NFTs and smart contracts on the Ethereum network. This system not only makes it easier to track ownership of assets, but also helps to ensure that assets are properly insured and that regular payments are made for insurance, taxes, and subscriptions like electricity, water, and natural gas. By using NFTs, the system can also represent rare and unique assets that cannot be replicated or replaced, which increases their value and collectability.",
+        "url": "https://www.semanticscholar.org/paper/244f5b19be571f8eb3c7f8cb0fc353f3a3f4e99f",
+        "citations": 0,
+        "venue": "International Journal of Advanced Research in Science, Communication and Technology"
+    },
+    {
+        "title": "Study on Implementation of Electronic Health Records using Blockchain Technology",
+        "authors": [
+            "Ms. K. Swetha",
+            "Mr.C. Ishaq",
+            "Mr.G.Sreenivasulu",
+            "Dr. K. K. Baseer",
+            "D. M. J. Pasha"
+        ],
+        "published_year": 2023,
+        "abstract": "The recent technological innovation, Blockchain system is used to store data in a way that makes it difficult or impossible to edit, hack, or steal the data. It is an important part of technology with a decentralized architecture, distributed database, and continuously expanding records. There are many other technologies that are used along in blockchain. After doing critical study on many documents and understanding the technologies used by various studies, its necessities, and the issues encountered by it while building their respective models. The purpose of this study is to examine various tools and technologies that can be used in blockchain. Around 200 research works have been collected and up to 40 research studies are filtered. Research studies are filtered based on various factors. Some research studies were excluded based on title, few were excluded based on abstract and titles. This study is categorized in terms of Blockchain using Ethereum, Electronic Health records, Smart Contracts and Health monitoring.",
+        "url": "https://www.semanticscholar.org/paper/337a6dd451d02439724b58b6e3a95d4103c76251",
+        "citations": 0,
+        "venue": "International Conference Electronic Systems, Signal Processing and Computing Technologies [ICESC-]"
+    },
+    {
+        "title": "NFT-based Asset Management System",
+        "authors": [
+            "Ismet Abaci",
+            "Eyup Emre Ulku"
+        ],
+        "published_year": 2022,
+        "abstract": "There are billions of houses, businesses, and lands in the world, and we can prove the ownership of these assets with title deeds prepared by government offices. In the purchase and sale transactions of these titled assets, it is necessary to go through long and complex possess, and the actions that need to be taken do not end here. The asset must also be insured and paid regularly for insurance, tax, and some subscriptions like electricity, water, natural gas, etc. This study aims to create a blockchain-based asset management system that uses NFTs (non-fungible tokens), smart contracts, and the Ethereum network.",
+        "url": "https://www.semanticscholar.org/paper/232cadbd7cc50618c26a357d7c7302d073c5d7ac",
+        "citations": 5,
+        "venue": "2022 International Symposium on Multidisciplinary Studies and Innovative Technologies (ISMSIT)"
+    },
+    {
+        "title": "Will NFTs Solve Some of the Age-Old Problems in Art Law?",
+        "authors": [],
+        "published_year": 2022,
+        "abstract": "Non-Fungible Tokens, or NFTs, are digital assets based on blockchain technology and are steadily growing in popularity in the art market. The technology has created a novel way of establishing ownership through tamper-resistant cryptographic records. A majority of NFTs are created via the Ethereum protocol and are most notably associated with other assets, such as digital art. Even prominent auction houses, like Christie’s, have joined the action. NFTs offer a whole host of new and interesting legal concerns, including questions surrounding smart contracts. The concerns surrounding traditional art, however, are long-standing and include (but are not limited to) provenance, authenticity, title, copyright infringement, and various art crimes established by statute. The combination of existing law and new technology creates uncertainty and requires exploration.\n\nThis note explores how NFTs may influence a few of the long-standing issues in art law, specifically if an NFT were to be associated with tangible artwork. Further, this note argues that NFTs show promise at resolving some of the issues surrounding provenance, title, and authenticity if the artwork is created with an NFT in mind; however, the technology can also complicate these same issues—most notably copyright issues—especially with existing artworks not created with NFTs in mind. The legal concerns surrounding NFTs are uncertain and only just emerging, and as is the case with most nascent technology, regulation lags. Yet, the potential benefits to artists are encouraging and ever evolving.",
+        "url": "https://www.semanticscholar.org/paper/11b924f45967036bfb45532809dc8654e9fcf2c9",
+        "citations": 1,
+        "venue": "SMU Science and Technology Law Review"
+    },
+    {
+        "title": "The Significance of Blockchain Governance in Agricultural Supply Networks",
+        "authors": [
+            "Michael Paul Kramer",
+            "Linda Bitsch",
+            "Jon H. Hanf"
+        ],
+        "published_year": 2022,
+        "abstract": "Firms in the agri-food sector have started implementing blockchain technology to both provide transparency over the supply chain transactions and to make trust attributes visible to consumers. Besides the well-known public blockchains such as Bitcoin and Ethereum, private- and consortium-type blockchain platforms exist. The latter ones are being operated in the agri-food ecosystem contributing to the vertically cooperated supply networks that are coordinated by a focal firm. Stakeholders’ attitude and behavioral intentions toward the use of the blockchain technology impact their use behavior. The results show that permissioned blockchain governance mechanisms with consensus and incentives to motivate stakeholders are lacking in private and consortium blockchains. This study closes a research gap as understanding how the stakeholder management approach can compensate for the lack of consensus mechanisms can provide managerial guidance toward the development of an effective stakeholder management strategy, which eventually can be provided for a competitive advantage. As there is little research on the role of blockchain as a novel governance mechanism, this research will contribute to the scholarly discussion toward a common understanding.",
+        "url": "https://www.semanticscholar.org/paper/e032edee26100a50daa314a2c14153ae5aa8cd48",
+        "citations": 0,
+        "venue": "Sustainable Agricultural Value Chain [Working Title]"
+    },
+    {
+        "title": "Paper 1: Detecting Ponzi Schemes on Ethereum: Towards Healthier Blockchain Technology",
+        "authors": [
+            "Aditya Joshi"
+        ],
+        "published_year": 2023,
+        "abstract": "Problem: In Ethereum network, a smart contract is software code that implements a computer protocol. Smart contracts automatically execute when preset conditions are met and cannot be terminated. Smart contracts can disguise Ponzi schemes in which only few out of hundreds of participants make profit from a contract. As the blockchain legal framework is still not fully developed, regulators may be unable to deter the creators of Ponzi schemes.",
+        "url": "https://www.semanticscholar.org/paper/c17531ffbbedf214a6ff0b57c361b47b3d777878",
+        "citations": 228,
+        "venue": ""
+    },
+    {
+        "title": "Fishing for Fraudsters: Uncovering Ethereum Phishing Gangs With Blockchain Data",
+        "authors": [
+            "Jieli Liu",
+            "Jinze Chen",
+            "Jiajing Wu",
+            "Zhiying Wu",
+            "Junyuan Fang",
+            "Zibin Zheng"
+        ],
+        "published_year": 2024,
+        "abstract": "As one of the most typical cybercrime types, phishing scams have extended the devil’s hand to the emerging blockchain ecosystem in recent years. Especially huge economic losses have been caused by phishing scams in Ethereum, the second-largest blockchain system. Existing approaches for Ethereum phishing detection, however, typically use machine learning or transaction graph embedding methods to identify phishers in isolation and do not effectively uncover the group of transaction accounts linked to scams (which we term a “gang”). Since accounts are pseudonymous in Ethereum, these undisclosed conspirator accounts have potential risks to the system. In this paper, we conduct the first study that characterizes and detects Ethereum phishing gangs. We first investigate the transaction behaviors in phishing gangs from the perspectives of individuals, pairs, and higher-order patterns. Our analysis reveals that although the Ethereum transaction graph is sparse with a highly skewed degree distribution, phishing accounts in the same gang have closer relationships and share specific transaction patterns. Based on our findings, we formalize the phishing gang detection problem and introduce a novel detection model named PGDetector. Given a risky phishing account as a seed, PGDetector can find out the potential risky accounts sharing close relationships within the seed’s community based on genetic algorithm optimization. Experimental results on large-scale Ethereum transaction data demonstrate the effectiveness of PGDetector.",
+        "url": "https://www.semanticscholar.org/paper/4cf6091cddc42739e06661be0495be1d33c8a6bb",
+        "citations": 11,
+        "venue": "IEEE Transactions on Information Forensics and Security"
+    },
+    {
+        "title": "Heterogeneous Network Representation Learning Approach for Ethereum Identity Identification",
+        "authors": [
+            "Yixian Wang",
+            "Zhaowei Liu",
+            "Jindong Xu",
+            "Weiqing Yan"
+        ],
+        "published_year": 2023,
+        "abstract": "Recently, network representation learning has been widely used to mine and analyze network characteristics, and it is also applied to blockchain, but most of the embedding methods in blockchain ignore the heterogeneity of network, so it is difficult to accurately describe the characteristics of the transaction. As smart society evolves, Ethereum makes smart contracts reality, while the mine of transaction characteristics appearing on the Ethereum platform is scarce; thus, there is an urgent need to mine Ethereum from contract and transfer. In this article, we propose a heterogeneous network representation learning method to mine implicit information inside Ethereum transactions. Specifically, we construct an Ethereum transaction network by collecting transaction data from normal and phishing Ethereum accounts. Then, we propose a walk strategy that combines timestamps and transaction amounts to represent the information that occurs at the time of a transaction. To mine the types of nodes and edges, we use a heterogeneous network representation learning method to map the transaction network to a low-dimensional space. Finally, we improve the accuracy of the embedding results in the node classification task, which has important implications for Ethereum mining as well as identity recognition.",
+        "url": "https://www.semanticscholar.org/paper/cac532c3a52b85287a0e1cad4e7d9dfa1ce05ad1",
+        "citations": 72,
+        "venue": "IEEE Transactions on Computational Social Systems"
+    },
+    {
+        "title": "Ethereum's Proposer-Builder Separation: Promises and Realities",
+        "authors": [
+            "Lioba Heimbach",
+            "Lucianna Kiffer",
+            "Christof Ferreira Torres",
+            "R. Wattenhofer"
+        ],
+        "published_year": 2023,
+        "abstract": "With Ethereum's transition from Proof-of-Work to Proof-of-Stake in September 2022 came another paradigm shift, the Proposer-Builder Separation (PBS) scheme. PBS was introduced to decouple the roles of selecting and ordering transactions in a block (i.e., the builder), from those validating its contents and proposing the block to the network as the new head of the blockchain (i.e., the proposer). In this landscape, proposers are the validators in the Proof-of-Stake consensus protocol, while now relying on specialized block builders for creating blocks with the highest value for the proposer. Additionally, relays act as mediators between builders and proposers. We study PBS adoption and show that the current landscape exhibits significant centralization amongst the builders and relays. Further, we explore whether PBS effectively achieves its intended objectives of enabling hobbyist validators to maximize block profitability and preventing censorship. Our findings reveal that although PBS grants validators the opportunity to access optimized and competitive blocks, it tends to stimulate censorship rather than reduce it. Additionally, we demonstrate that relays do not consistently uphold their commitments and may prove unreliable. Specifically, proposers do not always receive the complete promised value, and the censorship or filtering capabilities pledged by relays exhibit significant gaps.",
+        "url": "https://www.semanticscholar.org/paper/d3933808c64b322a0b77d894338435a6188c096b",
+        "citations": 40,
+        "venue": "ACM/SIGCOMM Internet Measurement Conference"
+    },
+    {
+        "title": "Shaping the future of Ethereum: exploring energy consumption in Proof-of-Work and Proof-of-Stake consensus",
+        "authors": [
+            "R. Asif",
+            "Syed Raheel Hassan"
+        ],
+        "published_year": 2023,
+        "abstract": "Ethereum (ETH) is a popular Layer-1 blockchain platform that has been used to create decentralized applications (dApps) and smart contracts. Ethereum 2.0, or Serenity, is a significant update to the network that intends to address numerous issues with scalability, security, and energy efficiency. The Proof-of-Stake (PoS) consensus method will replace the Proof-of-Work (PoW) mechanism, which is one of the major new features of Ethereum 2.0. Given that PoS doesn’t require miners to do intensive mathematical calculations in order to validate transactions, it has the potential to be more energy-efficient than PoW. Additionally, this Ethereum upgrade will also be more secure due to the introduction of a new mechanism called “Casper” that will ensure that validators are always in agreement on the state of the blockchain. The paper begins by discussing the current issues facing Ethereum, including the limitations of the Proof of Work (PoW) consensus mechanism and the need for more efficient and scalable solutions. In this study, we peered at the major changes introduced by Ethereum 2.0, such as the new consensus method (Proof-of-Stake) and the addition of shard chains (Ethereum 2.0), as well as the associated development timelines, benefits and the community criticism on this upgrade.",
+        "url": "https://www.semanticscholar.org/paper/9afabaa7083cfaf7a4b4309bdb1572588f61a39f",
+        "citations": 24,
+        "venue": "Frontiers Blockchain"
+    },
+    {
+        "title": "Modified Genetic Algorithm with Deep Learning for Fraud Transactions of Ethereum Smart Contract",
+        "authors": [
+            "R. Aziz",
+            "Rajul Mahto",
+            "Kartik Goel",
+            "Aryan Das",
+            "Pavan Kumar",
+            "Akash Saxena"
+        ],
+        "published_year": 2023,
+        "abstract": "Recently, the Ethereum smart contracts have seen a surge in interest from the scientific community and new commercial uses. However, as online trade expands, other fraudulent practices—including phishing, bribery, and money laundering—emerge as significant challenges to trade security. This study is useful for reliably detecting fraudulent transactions; this work developed a deep learning model using a unique metaheuristic optimization strategy. The new optimization method to overcome the challenges, Optimized Genetic Algorithm-Cuckoo Search (GA-CS), is combined with deep learning. In this research, a Genetic Algorithm (GA) is used in the phase of exploration in the Cuckoo Search (CS) technique to address a deficiency in CS. A comprehensive experiment was conducted to appraise the efficiency and performance of the suggested strategies compared with those of various popular techniques, such as k-nearest neighbors (KNN), logistic regression (LR), multi-layer perceptron (MLP), XGBoost, light gradient boosting machine (LGBM), random forest (RF), and support vector classification (SVC), in terms of restricted features and we compared their performance and efficiency metrics to the suggested approach in detecting fraudulent behavior on Ethereum. The suggested technique and SVC models outperform the rest of the models, with the highest accuracy, while deep learning with the proposed optimization strategy outperforms the RF model, with slightly higher performance of 99.71% versus 98.33%.",
+        "url": "https://www.semanticscholar.org/paper/f4e8e0d1ed84532e4354fb9aacfa84274299042c",
+        "citations": 45,
+        "venue": "Applied Sciences"
+    },
+    {
+        "title": "An Ethereum-Based Distributed Application for Enhancing Food Supply Chain Traceability",
+        "authors": [
+            "E. Kechagias",
+            "Sotiris P. Gayialis",
+            "G. Papadopoulos",
+            "G. Papoutsis"
+        ],
+        "published_year": 2023,
+        "abstract": "In today’s era, humanity has been overwhelmed by technological revolutions that have changed and will continue to change how business operations are performed, directly or indirectly. At the same time, the processes within the supply chain are quite complex, and as technology and processes evolve, they become more and more challenging. Traceability has become a critical issue in the food industry to ensure safety, quality, and compliance with regulations. The adoption of blockchain technology in the food supply chain has gained significant attention as a potential solution to improve traceability. This paper presents the development of a distributed application for table olives’ traceability on the Ethereum network. The paper also presents a methodological framework, which can help anyone aiming to implement an Ethereum decentralized application and demonstrates the practical use of the developed application by a Greek table olives producer. The application significantly improved the producer’s product traceability by providing a secure, transparent, and efficient solution for tracking and tracing the products in the supply chain. The app reduced the time, increased the accuracy and reliability of data, improved supply chain efficiency, and helped the producer comply with international regulations and standards.",
+        "url": "https://www.semanticscholar.org/paper/73e65309e4ea7b691eeb4d5986ccc2dbb77cae31",
+        "citations": 23,
+        "venue": "Foods"
+    },
+    {
+        "title": "BERT4ETH: A Pre-trained Transformer for Ethereum Fraud Detection",
+        "authors": [
+            "Sihao Hu",
+            "Zhen Zhang",
+            "B. Luo",
+            "Shengliang Lu",
+            "Bingsheng He",
+            "Ling Liu"
+        ],
+        "published_year": 2023,
+        "abstract": "As various forms of fraud proliferate on Ethereum, it is imperative to safeguard against these malicious activities to protect susceptible users from being victimized. While current studies solely rely on graph-based fraud detection approaches, it is argued that they may not be well-suited for dealing with highly repetitive, skew-distributed and heterogeneous Ethereum transactions. To address these challenges, we propose BERT4ETH, a universal pre-trained Transformer encoder that serves as an account representation extractor for detecting various fraud behaviors on Ethereum. BERT4ETH features the superior modeling capability of Transformer to capture the dynamic sequential patterns inherent in Ethereum transactions, and addresses the challenges of pre-training a BERT model for Ethereum with three practical and effective strategies, namely repetitiveness reduction, skew alleviation and heterogeneity modeling. Our empirical evaluation demonstrates that BERT4ETH outperforms state-of-the-art methods with significant enhancements in terms of the phishing account detection and de-anonymization tasks. The code for BERT4ETH is available at: https://github.com/git-disl/BERT4ETH.",
+        "url": "https://www.semanticscholar.org/paper/e33dd843f35ba929a3052bb752c1ec39b9a79617",
+        "citations": 27,
+        "venue": "The Web Conference"
+    },
+    {
+        "title": "Predicting Cryptocurrency Fraud Using ChaosNet: The Ethereum Manifestation",
+        "authors": [
+            "Anurag Dutta",
+            "Liton Chandra Voumik",
+            "A. Ramamoorthy",
+            "Samrat Ray",
+            "Asif Raihan"
+        ],
+        "published_year": 2023,
+        "abstract": "Cryptocurrencies are in high demand now due to their volatile and untraceable nature. Bitcoin, Ethereum, and Dogecoin are just a few examples. This research seeks to identify deception and probable fraud in Ethereum transactional processes. We have developed this capability via ChaosNet, an Artificial Neural Network constructed using Generalized Luröth Series maps. Chaos has been objectively discovered in the brain at many spatiotemporal scales. Several synthetic neuronal simulations, including the Hindmarsh–Rose model, possess chaos, and individual brain neurons are known to display chaotic bursting phenomena. Although chaos is included in several Artificial Neural Networks (ANNs), for instance, in Recursively Generating Neural Networks, no ANNs exist for classical tasks entirely made up of chaoticity. ChaosNet uses the chaotic GLS neurons’ property of topological transitivity to perform classification problems on pools of data with cutting-edge performance, lowering the necessary training sample count. This synthetic neural network can perform categorization tasks by gathering a definite amount of training data. ChaosNet utilizes some of the best traits of networks composed of biological neurons, which derive from the strong chaotic activity of individual neurons, to solve complex classification tasks on par with or better than standard Artificial Neural Networks. It has been shown to require much fewer training samples. This ability of ChaosNet has been well exploited for the objective of our research. Further, in this article, ChaosNet has been integrated with several well-known ML algorithms to cater to the purposes of this study. The results obtained are better than the generic results.",
+        "url": "https://www.semanticscholar.org/paper/dcdc8b206ecbdb06fa557c1bdda4819429c1695a",
+        "citations": 24,
+        "venue": "Journal of Risk and Financial Management"
+    },
+    {
+        "title": "Uncle Maker: (Time)Stamping Out The Competition in Ethereum",
+        "authors": [
+            "Aviv Yaish",
+            "Gilad Stern"
+        ],
+        "published_year": 2023,
+        "abstract": "We present and analyze an attack on Ethereum 1's consensus mechanism, which allows miners to obtain higher mining rewards compared to their honest peers. This attack is novel in that it relies on manipulating block timestamps and the difficulty-adjustment algorithm (DAA) to give the miner an advantage whenever block races ensue. We call our attack Uncle Maker, as it induces a higher rate of uncle blocks. We describe several variants of the attack. Among these, one that is risk-free for miners. Our attack differs from past attacks such as Selfish Mining, that have been shown to be profitable but were never observed in practice: We analyze data from Ethereum's blockchain and show that some of Ethereum's miners have been actively running a variant of this attack for several years without being detected, making this the first evidence of miner manipulation of a major consensus mechanism. We present our evidence, as well as estimates of the profits gained by attackers, at the expense of honest miners. Since several blockchains are still running Ethereum 1's protocol, we suggest concrete fixes and implement them as a patch for geth.",
+        "url": "https://www.semanticscholar.org/paper/82320fd747c76152a0562cd0da8c75591f9f887d",
+        "citations": 22,
+        "venue": "IACR Cryptology ePrint Archive"
+    },
+    {
+        "title": "Practical Limitations of Ethereum’s Layer-2",
+        "authors": [
+            "Ray Neiheiser",
+            "Gustavo Inácio",
+            "Luciana Rech",
+            "C. Montez",
+            "M. Matos",
+            "Luís Rodrigues"
+        ],
+        "published_year": 2023,
+        "abstract": "Most permissionless blockchains inherently suffer from throughput limitations. Layer-2 systems, such as side-chains or Rollups, have been proposed as a possible strategy to overcome this limitation. Layer-2 systems interact with the main-chain in two ways. First, users can move funds from/to the main-chain to/from the layer-2. Second, layer-2 systems periodically synchronize with the main-chain to keep some form of log of their activity on the main-chain - this log is key for security. Due to this interaction with the main-chain, which is necessary and recurrent, layer-2 systems impose some load on the main-chain. The impact of such load on the main-chain has been, so far, poorly understood. In addition to that, layer-2 approaches typically sacrifice decentralization and security in favor of higher throughput. This paper presents an experimental study that analyzes the current state of Ethereum layer-2 projects. Our goal is to assess the load they impose on Ethereum and to understand their scalability potential in the long-run. Our analysis shows that the impact of any given layer-2 on the main-chain is the result of both technical aspects (how state is logged on the main-chain) and user behavior (how often users decide to transfer funds between the layer-2 and the main-chain). Based on our observations, we infer that without efficient mechanisms that allow users to transfer funds in a secure and fast manner directly from one layer-2 project to another, current layer-2 systems will not be able to scale Ethereum effectively, regardless of their technical solutions. Furthermore, from our results, we conclude that the layer-2 systems that offer similar security guarantees as Ethereum have limited scalability potential, while approaches that offer better performance, sacrifice security and lead to an increase in centralization which runs against the end-goals of permissionless blockchains.",
+        "url": "https://www.semanticscholar.org/paper/72b4ceacf651333241d0dc88d40d6c3434eb5991",
+        "citations": 20,
+        "venue": "IEEE Access"
+    },
+    {
+        "title": "Performance and Scalability Analysis of Ethereum and Hyperledger Fabric",
+        "authors": [
+            "Yusuf Ucbas",
+            "A. Eleyan",
+            "Mohammad Hammoudeh",
+            "Manar Alohaly"
+        ],
+        "published_year": 2023,
+        "abstract": "Blockchain emerged in the last decade as a promising technology with possible applications in numerous fields such as healthcare, supply chain, and finance. Its immutability, transparency, security, and decentralisation gained significant attention in academia and industry. One technology that blockchain can support is the Internet of Things (IoT). However, there are still challenges hindering the real-world adoption of blockchain due to concerns about its performance, scalability, and complexity. This study contributes to a comparative study that analyses blockchain platforms in terms of their performance and scalability, with specific reference to IoT applications. We focus on the Ethereum and Hyperledger Fabric blockchain platforms. As part of the implementation, an IoT healthcare use case is developed. We conducted performance and scalability tests on private platform networks to measure the throughput and latency parameters. To evaluate scalability, we examined the behaviour of the studied platforms in response to an increase in the number and rate of transactions. Hyperledger Caliper is used to collect these parameters. Experiment analysis shows that Fabric outperforms Ethereum in terms of latency and throughput. As for performance and scalability analysis, Fabric was found to be more suitable than Ethereum for private networks such as IoT healthcare ecosystems.",
+        "url": "https://www.semanticscholar.org/paper/b97eb10de9374f68510c83330cbd49da2c25b001",
+        "citations": 20,
+        "venue": "IEEE Access"
+    },
+    {
+        "title": "Generative Adversarial Networks for Cyber Threat Hunting in Ethereum Blockchain",
+        "authors": [
+            "Elnaz Rabieinejad",
+            "Abbas Yazdinejad",
+            "R. Parizi",
+            "A. Dehghantanha"
+        ],
+        "published_year": 2023,
+        "abstract": "Ethereum blockchain has shown great potential in providing the next generation of the decentralized platform beyond crypto payments. Recently, it has attracted researchers and industry players to experiment with developing various Web3 applications for the Internet of Things (IoT), Defi, Metaverse and many more. Although Ethereum provides a secure platform for developing decentralized applications, it is not immune to security risks and has been a victim of numerous cyber attacks. Adversarial attacks are a new cyber threat to systems that have been rising. Adversarial attacks can disrupt and exploit decentralized applications running on the Ethereum platform by creating fake accounts and transactions. Detecting adversarial attacks is challenging because the fake materials (e.g., accounts and transactions) as malicious payloads are similar to benign data. This paper proposes a model using Generative Adversarial Networks (GAN) and Deep Recurrent Neural Networks (RNN) for cyber threat hunting in the Ethereum blockchain. Firstly, we employ GAN to generate fake transactions using genuine Ethereum transactions as the first phase of the proposed model. Then in the second phase, we utilize bi-directional Long Short-Term Memory (LSTM) to identify adversarial transactions in a hunting exercise. The results of the first phase evaluation show that the GAN can generate transactions identical to the actual Ethereum transactions with an accuracy of 82.51%. Also, the results of the second phase show 99.98% accuracy in identifying adversarial transactions.",
+        "url": "https://www.semanticscholar.org/paper/a9b1580d9a30fb40d74a144ba29c2755dff8b5fd",
+        "citations": 18,
+        "venue": "Distributed Ledger Technol. Res. Pract."
+    },
+    {
+        "title": "Speculative Denial-of-Service Attacks in Ethereum",
+        "authors": [
+            "Aviv Yaish"
+        ],
+        "published_year": 2023,
+        "abstract": "Transaction fees compensate actors for resources expended on transactions and can only be charged from transactions included in blocks. But, the expressiveness of Turing-complete contracts implies that verifying if transactions can be included requires executing them on the current blockchain state. In this work, we show that adversaries can craft malicious transactions that decouple the work imposed on blockchain actors from the compensation offered in return. We introduce three attacks: (i) ConditionalExhaust, a conditional resource exhaustion attack (REA) against blockchain actors. (ii) Mem-Purge, an attack for evicting transactions from actors’ mem-pools. (iii) GhostTX, an attack on the reputation system used in Ethereum’s proposer-builder separation (PBS) ecosystem. We evaluate our attacks on an Ethereum testnet and find that by combining ConditionalExhaust and MemPurge, ad-versaries can simultaneously burden victims’ computational resources and clog their mempools to the point where victims are unable to include transactions in blocks. Thus, victims create empty blocks, thereby hurting the system’s liveness. The attack’s expected cost is $376, but becomes cheaper if adversaries are validators. For other attackers, costs decrease if censorship is prevalent in the network. ConditionalExhaust and MemPurge are made possible by inherent features of Turing-complete blockchains, and potential mitigations may result in reducing a ledger’s scalability.",
+        "url": "https://www.semanticscholar.org/paper/a5a0a4a7a3b093508a4d91ced74ba62d4a9bb406",
+        "citations": 18,
+        "venue": "IACR Cryptology ePrint Archive"
+    },
+    {
+        "title": "TxT: Real-Time Transaction Encapsulation for Ethereum Smart Contracts",
+        "authors": [
+            "Nikolay Ivanov",
+            "Qiben Yan",
+            "Anurag Kompalli"
+        ],
+        "published_year": 2023,
+        "abstract": "Ethereum is a permissionless blockchain ecosystem that supports execution of smart contracts, the key enablers of decentralized finance (DeFi) and non-fungible tokens (NFT). However, the expressiveness of Ethereum smart contracts is a double-edged sword: while it enables blockchain programmability, it also introduces security vulnerabilities, i.e., the exploitable discrepancies between expected and actual behaviors of the contract code. To address these discrepancies and increase the vulnerability coverage, we propose a new smart contract security testing approach called transaction encapsulation. The core idea lies in the local execution of transactions on a fully-synchronized yet isolated Ethereum node, which creates a preview of outcomes of transaction sequences on the current state of blockchain. This approach poses a critical technical challenge — the well-known time-of-check/time-of-use (TOCTOU) problem, i.e., the assurance that the final transactions will exhibit the same execution paths as the encapsulated test transactions. In this work, we determine the exact conditions for guaranteed execution path replicability of the tested transactions. To demonstrate the transaction encapsulation, we implement a transaction testing tool, TxT, which reveals the actual outcomes (either benign or malicious) of Ethereum transactions. To ensure the correctness of testing, TxT deterministically verifies whether a given sequence of transactions ensues an identical execution path on the current state of blockchain. We analyze over 1.3 billion Ethereum transactions and determine that 96.5% of them can be verified by TxT. We further show that TxT successfully reveals the suspicious behaviors associated with 31 out of 37 vulnerabilities (83.8% coverage) in the smart contract weakness classification (SWC) registry. In comparison, the vulnerability coverage of all the existing defense approaches combined only reaches 40.5%.",
+        "url": "https://www.semanticscholar.org/paper/8f575f54f0d049df15c994a1f5513d4295ef4c92",
+        "citations": 15,
+        "venue": "IEEE Transactions on Information Forensics and Security"
+    },
+    {
+        "title": "Ethereum Proof-of-Stake Consensus Layer: Participation and Decentralization",
+        "authors": [
+            "Dominic Grandjean",
+            "Lioba Heimbach",
+            "Roger Wattenhofer"
+        ],
+        "published_year": 2023,
+        "abstract": "In September 2022, Ethereum transitioned from Proof-of-Work (PoW) to Proof-of-Stake (PoS) during\"the merge\"- making it the largest PoS cryptocurrency in terms of market capitalization. With this work, we present a comprehensive measurement study of the current state of the Ethereum PoS consensus layer on the beacon chain. We perform a longitudinal study of the history of the beacon chain. Our work finds that all dips in network participation are caused by network upgrades, issues with major consensus clients, or issues with service operators controlling a large number of validators. Further, our longitudinal staking power decentralization analysis reveals that Ethereum PoS fairs similarly to its PoW counterpart in terms of decentralization and exhibits the immense impact of (liquid) staking services on staking power decentralization. Finally, we highlight the heightened security concerns in Ethereum PoS caused by high degrees of centralization.",
+        "url": "https://www.semanticscholar.org/paper/551f22f3e66c96c3b8e3b75a957b3e3f0db79d5b",
+        "citations": 15,
+        "venue": "FC Workshops"
+    },
+    {
+        "title": "ETHEREUM: A SECURE DECENTRALISED GENERALISED TRANSACTION LEDGER",
+        "authors": [],
+        "published_year": 2022,
+        "abstract": ". The blockchain paradigm when coupled with cryptographically-secured transactions has demonstrated its utility through a number of projects, with Bitcoin being one of the most notable ones. Each such project can be seen as a simple application on a decentralised, but singleton, compute resource. We can call this paradigm a transactional singleton machine with shared-state. Ethereum implements this paradigm in a generalised manner. Furthermore it provides a plurality of such resources, each with a distinct state and operating code but able to interact through a message-passing framework with others. We discuss its design, implementation issues, the opportunities it provides and the future hurdles we envisage.",
+        "url": "https://www.semanticscholar.org/paper/3f8a667e36e6af83f641068e42628a116244de57",
+        "citations": 71,
+        "venue": ""
+    },
+    {
+        "title": "Systematic Review of Security Vulnerabilities in Ethereum Blockchain Smart Contract",
+        "authors": [
+            "Satpal Singh Kushwaha",
+            "Sandeep Joshi",
+            "Dilbag Singh",
+            "Manjit Kaur",
+            "Heung-No Lee"
+        ],
+        "published_year": 2022,
+        "abstract": "Blockchain is a revolutionary technology that enables users to communicate in a trust-less manner. It revolutionizes the modes of business between organizations without the need for a trusted third party. It is a distributed ledger technology based on a decentralized peer-to-peer (P2P) network. It enables users to store data globally on thousands of computers in an immutable format and empowers users to deploy small pieces of programs known as smart contracts. The blockchain-based smart contract enables auto enforcement of the agreed terms between two untrusted parties. There are several security vulnerabilities in Ethereum blockchain-based smart contracts, due to which sometimes it does not behave as intended. Because a smart contract can hold millions of dollars as cryptocurrency, so these security vulnerabilities can lead to disastrous losses. In this paper, a systematic review of the security vulnerabilities in the Ethereum blockchain is presented. The main objective is to discuss Ethereum smart contract security vulnerabilities, detection tools, real life attacks and preventive mechanisms. Comparisons are drawn among the Ethereum smart contract analysis tools by considering various features. From the extensive depth review, various issues associated with the Ethereum blockchain-based smart contract are highlighted. Finally, various future directions are also discussed in the field of the Ethereum blockchain-based smart contract that can help the researchers to set the directions for future research in this domain.",
+        "url": "https://www.semanticscholar.org/paper/69de6f205b54508004bce4f70c06691a836127d2",
+        "citations": 150,
+        "venue": "IEEE Access"
+    },
+    {
+        "title": "Graph Embedding-Based Money Laundering Detection for Ethereum",
+        "authors": [
+            "Jiayi Liu",
+            "Changchun Yin",
+            "H. Wang",
+            "Xiaofei Wu",
+            "Dongwan Lan",
+            "Lu Zhou",
+            "Chunpeng Ge"
+        ],
+        "published_year": 2023,
+        "abstract": "The number of money laundering crimes for Ethereum and the amount involved have grown exponentially in recent years. However, previous studies related to anomaly detection for Ethereum usually consider multiple types of financial crimes as a whole, ignoring the apparent differences between money laundering and other malicious activities and lacking a more granular detection targeting money laundering. In this paper, for the first time, we propose an improved graph embedding algorithm specifically for money laundering detection called GTN2vec. By mining Ethereum transaction records, the algorithm comprehensively considers the behavioral patterns of money launderers and structural information of transaction networks and can automatically extract features of money laundering addresses. Specifically, we fuse the gas price and timestamp from the transaction records into a new weight and set appropriate return and exploration parameters to modulate the sampling tendency of random walk to characterize the money laundering nodes. We construct the dataset using real Ethereum data and evaluate the effectiveness of GTN2vec on the dataset by various classifiers such as random forest. The experimental results show that GTN2vec can accurately and effectively extract money laundering account features and significantly outperform other advanced graph embedding methods.",
+        "url": "https://www.semanticscholar.org/paper/373a5f6a66336cb4f45beb767c3209289df6790c",
+        "citations": 10,
+        "venue": "Electronics"
+    },
+    {
+        "title": "Detecting Phishing Accounts on Ethereum Based on Transaction Records and EGAT",
+        "authors": [
+            "Xuanchen Zhou",
+            "Wenzhong Yang",
+            "Xiaodan Tian"
+        ],
+        "published_year": 2023,
+        "abstract": "In recent years, the losses caused by scams on Ethereum have reached a level that cannot be ignored. As one of the most rampant crimes, phishing scams have caused a huge economic loss to blockchain platforms and users. Under these circumstances, to address the threat to the financial security of blockchain, an Edge Aggregated Graph Attention Network (EGAT) based on the static subgraph representation of the transaction network is proposed. This study intends to detect Ethereum phishing accounts through the classification of transaction network subgraphs with the following procedures. Firstly, the accounts are used as nodes and the flow of transaction funds is used as directed edges to construct the transaction network graph. Secondly, the transaction record data of phishing accounts in the publicly available Ethereum are analyzed and statistical features of Value, Gas, and Timestamp values are manually constructed as node and edge features of the graph. Finally, the features are extracted and classified using the EGAT network. According to the experimental results, the Recall of the proposed method from the article is 99.3% on the dataset of phishing accounts. As demonstrated, the EGAT is more efficient and accurate compared with Graph2Vec and DeepWalk, and the graph structure features can express semantics better than manual features and simple transaction networks, which effectively improves the performance of phishing account detection.",
+        "url": "https://www.semanticscholar.org/paper/5d94ecca2815c6d132ab067614978fb6bca86e95",
+        "citations": 11,
+        "venue": "Electronics"
+    },
+    {
+        "title": "E-voting System Based on Ethereum Blockchain Technology Using Ganache and Remix Environments",
+        "authors": [
+            "Hind S. Hassan",
+            "R. Hassan",
+            "E. Gbashi"
+        ],
+        "published_year": 2023,
+        "abstract": "—In the second decade of the twenty-first century, blockchain is considered one of the most popular computer technologies. Blockchain is a zero-trust network, making it a potent tool for various services provided that people are ready to believe and invest in it. In the Ethereum world, the blockchain runs on smart contracts, self-executing applications that come at the cost of security. As technology is used increasingly, Election is facing new issues of trust and management. Therefore, E-voting systems are increasingly acceptable because they are more accurate, reliable, practical, and secure. This research purpose is to propose a decentralized elections application based on Ethereum; the application was developed using the Truffle development framework. The actions of the software were written into an Ethereum smart contract, which was then deployed on the Ethereum network. A web interface had been used to read the user's vote before it was broadcast to the Ethereum network through the web3.js API. The ganache was utilized as the Ethereum client. Metalmark was used as a wallet on a website, and the remix was used to deploy the smart contract on the main network, the results of implementing the proposed system show that the cost of each transaction is not stable, its increases with the increase the network load, and the throughput ends up at 14 transactions per second.",
+        "url": "https://www.semanticscholar.org/paper/478a1c72ca9869d56c569df34c2b876ea175b7c1",
+        "citations": 10,
+        "venue": "Engineering and Technology Journal"
+    },
+    {
+        "title": "Partitioning Ethereum without Eclipsing It",
+        "authors": [
+            "Hwanjo Heo",
+            "Seungwon Woo",
+            "Taeung Yoon",
+            "M. Kang",
+            "Seungwon Shin"
+        ],
+        "published_year": 2023,
+        "abstract": "—We present a practical partitioning attack, which we call Gethlighting, that isolates an Ethereum full node from the rest of the network for hours without having to occupy (or eclipse) all of the target’s peer connections. In Gethlighting, an adversary controls only about a half (e.g., 25 out of total 50) of all peer connections of a target node, achieving powerful partitioning with a small attack budget of operating several inexpensive virtual machines. At the core of Gethlighting, its low-rate denial-of-service (DoS) strategy effectively stops the growth of local blockchain for hours while leaving other Ethereum node operations undisturbed. We analyze how subtle and in-signiﬁcant delays incurred by a low-rate DoS can lead to a powerful blockchain partitioning attack. The practical impact of Gethlighting is discussed—i.e., the attack is scalable and low-cost (only about $5,714 for targeting all Ethereum full nodes concurrently for 24 hours), and extremely simple to launch. We demonstrate the feasibility of Gethlighting with full nodes in the Ethereum mainnet and testnet in both controlled and real-world experiments. We identify a number of fundamental system characteristics in Ethereum that enable Gethlighting attacks and propose countermeasures that require some protocol and client implementation enhancements. Ethereum Foundation has acknowledged this vulnerability in September 2022 and one of our countermeasures has been accepted as a hotﬁx for Geth 1.11.0.",
+        "url": "https://www.semanticscholar.org/paper/c3b12e5dfcc912c72ee5603b8f0423c102e3a7ef",
+        "citations": 9,
+        "venue": "Network and Distributed System Security Symposium"
+    },
+    {
+        "title": "Network Activity and Ethereum Gas Prices",
+        "authors": [
+            "Dimitrios Koutmos"
+        ],
+        "published_year": 2023,
+        "abstract": "This article explores the extent to which network activity can explain changes in Ethereum transaction fees. Such fees are referred to as “gas prices” within the Ethereum blockchain, and are important inputs not only for executing transactions, but also for the deployment of smart contracts within the network. Using a bootstrapped quantile regression model, it can be shown that network activity, such as the sizes of blocks or the number of transactions and contracts, can have a heterogeneous relationship with gas prices across periods of low and high gas price changes. Of all the network activity variables examined herein, the number of intraday transactions within Ethereum’s blockchain is most consistent in explaining gas fees across the full distribution of gas fee changes. From a statistical perspective, the bootstrapped quantile regression approach demonstrates that linear modeling techniques may yield but a partial view of the rich dynamics found in the full range of gas price changes’ conditional distribution. This is an important finding given that Ethereum’s blockchain has undergone fundamental economic and technological regime changes, such as the recent implementation of the Ethereum Improvement Proposal (EIP) 1559, which aims to provide an algorithmic updating rule to estimate Ethereum’s “base fee”.",
+        "url": "https://www.semanticscholar.org/paper/6a11ed660dfee71b5f5af3aabcf86d68dc85fc8f",
+        "citations": 7,
+        "venue": "Journal of Risk and Financial Management"
+    },
+    {
+        "title": "TTAGN: Temporal Transaction Aggregation Graph Network for Ethereum Phishing Scams Detection",
+        "authors": [
+            "Sijia Li",
+            "Gaopeng Gou",
+            "Chang Liu",
+            "Chengshang Hou",
+            "Zhenzhen Li",
+            "G. Xiong"
+        ],
+        "published_year": 2022,
+        "abstract": "In recent years, phishing scams have become the most serious type of crime involved in Ethereum, the second-largest blockchain platform. The existing phishing scams detection technology on Ethereum mostly uses traditional machine learning or network representation learning to mine the key information from the transaction network to identify phishing addresses. However, these methods adopt the last transaction record or even completely ignore these records, and only manual-designed features are taken for the node representation. In this paper, we propose a Temporal Transaction Aggregation Graph Network (TTAGN) to enhance phishing scams detection performance on Ethereum. Specifically, in the temporal edges representation module, we model the temporal relationship of historical transaction records between nodes to construct the edge representation of the Ethereum transaction network. Moreover, the edge representations around the node are aggregated to fuse topological interactive relationships into its representation, also named as trading features, in the edge2node module. We further combine trading features with common statistical and structural features obtained by graph neural networks to identify phishing addresses. Evaluated on real-world Ethereum phishing scams datasets, our TTAGN (92.8% AUC, and 81.6% F1-score) outperforms the state-of-the-art methods, and the effectiveness of temporal edges representation and edge2node module is also demonstrated.",
+        "url": "https://www.semanticscholar.org/paper/48aae5847af97de0d62153b41bd2a470f8e9d4cf",
+        "citations": 69,
+        "venue": "The Web Conference"
+    },
+    {
+        "title": "An Event Study of the Ethereum Transition to Proof-of-Stake",
+        "authors": [
+            "Elie Kapengut",
+            "Bruce Mizrach"
+        ],
+        "published_year": 2022,
+        "abstract": "On 15 September 2022, the Ethereum network adopted a proof-of-stake (PoS) consensus mechanism. We study the impact on the network and competing platforms in a two month event window around the Beacon chain merge. We find that the transition to PoS has reduced energy consumption by 99.98%. Miners have not transformed into validators, and total block reward income (in USD) has fallen by 97%, though transaction fees (in ETH) for Ether have increased nearly 10%. The Herfindahl index for the top 10 is 1009; the network is 19% less concentrated after the merge. Ethereum supply growth has been deflationary since the merge. The time between consecutive blocks is now steady at 12 s and transactions per day are up 7.0%. On Polygon, Matic fees rose but token fees fell. Polygon also slows, processing 3.3% fewer transactions per day. Solana’s fees fall by $0.0003, and transactions per day are down 48%. Stablecoin transfer volumes fall on Ethereum and Polygon, but rise on Solana.",
+        "url": "https://www.semanticscholar.org/paper/a188c50a0085df4ae49196d9679cc6eb1a1834a9",
+        "citations": 64,
+        "venue": "Social Science Research Network"
+    },
+    {
+        "title": "Portrait of decentralized application users: an overview based on large-scale Ethereum data",
+        "authors": [
+            "Tian Min",
+            "Wei-Xuan Cai"
+        ],
+        "published_year": 2022,
+        "abstract": null,
+        "url": "https://www.semanticscholar.org/paper/f5eb6f8877c97a7dd1e39a7117450f24fc24c32a",
+        "citations": 47,
+        "venue": "CCF Transactions on Pervasive Computing and Interaction"
+    },
+    {
+        "title": "Behavior-Aware Account De-Anonymization on Ethereum Interaction Graph",
+        "authors": [
+            "Jiajun Zhou",
+            "Chenkai Hu",
+            "Jianlei Chi",
+            "Jiajing Wu",
+            "Meng Shen",
+            "Qi Xuan"
+        ],
+        "published_year": 2022,
+        "abstract": "Blockchain technology has the characteristics of decentralization, traceability and tamper-proof, which creates a reliable decentralized trust mechanism, further accelerating the development of blockchain finance. However, the anonymization of blockchain hinders market regulation, resulting in increasing illegal activities such as money laundering, gambling and phishing fraud on blockchain financial platforms. Thus, financial security has become a top priority in the blockchain ecosystem, calling for effective market regulation. In this paper, we consider identifying Ethereum accounts from a graph classification perspective, and propose an end-to-end graph neural network framework named Ethident, to characterize the behavior patterns of accounts and further achieve account de-anonymization. Specifically, we first construct an Account Interaction Graph (AIG) using raw Ethereum data. Then we design a hierarchical graph attention encoder named HGATE as the backbone of our framework, which can effectively characterize the node-level account features and subgraph-level behavior patterns. For alleviating account label scarcity, we further introduce contrastive self-supervision mechanism as regularization to jointly train our framework. Comprehensive experiments on Ethereum datasets demonstrate that our framework achieves superior performance in account identification, yielding 1.13% $\\sim ~4.93$ % relative improvement over previous state-of-the-art. Furthermore, detailed analyses illustrate the effectiveness of Ethident in identifying and understanding the behavior of known participants in Ethereum (e.g. exchanges, miners, etc.), as well as that of the lawbreakers (e.g. phishing scammers, hackers, etc.), which may aid in risk assessment and market regulation.",
+        "url": "https://www.semanticscholar.org/paper/aa7c02a4b621e7ffb74d081e0f5045b955f6eb15",
+        "citations": 46,
+        "venue": "IEEE Transactions on Information Forensics and Security"
+    },
+    {
+        "title": "Detecting Ethereum Ponzi Schemes Based on Improved LightGBM Algorithm",
+        "authors": [
+            "Yanmei Zhang",
+            "Wenqiang Yu",
+            "Ziyu Li",
+            "Salman Raza",
+            "Huaihu Cao"
+        ],
+        "published_year": 2022,
+        "abstract": "As more investors adopt to enter the field of blockchain investment, the Ponzi scheme, a traditional investment scam, has emerged as a hidden fraud in smart contracts. Although some proposed solutions have paid attention to detecting Ponzi schemes in the blockchain, two problems remain: features for detecting Ponzi schemes are incomplete, and algorithms for detecting Ponzi schemes are not sufficiently efficient. Therefore, we innovatively extract the bytecode feature and combine it with user transaction and opcode frequencies to get more comprehensive features. With these features, we propose a smart contract Ponzi scheme identification method based on the improved LightGBM algorithm. Experiments conducted on the real data set of Ethereum prove that our proposed method has improved accuracy dramatically in terms of the $F$ -score index and the AUC index compared with the state-of-the-art methods. In addition, model training speed is improved significantly. Therefore, our method more accurately identifies Ponzi schemes in smart contracts, thus reducing investment risk.",
+        "url": "https://www.semanticscholar.org/paper/e29acf47c76a2c61e276a6a47b7282cfb79ba85e",
+        "citations": 42,
+        "venue": "IEEE Transactions on Computational Social Systems"
+    },
+    {
+        "title": "The State of Ethereum Smart Contracts Security: Vulnerabilities, Countermeasures, and Tool Support",
+        "authors": [
+            "Haozhe Zhou",
+            "Amin Milani Fard",
+            "A. Makanju"
+        ],
+        "published_year": 2022,
+        "abstract": "Smart contracts are self-executing programs that run on the blockchain and make it possible for peers to enforce agreements without a third-party guarantee. The smart contract on Ethereum is the fundamental element of decentralized finance with billions of US dollars in value. Smart contracts cannot be changed after deployment and hence the code needs to be verified for potential vulnerabilities. However, smart contracts are far from being secure and attacks exploiting vulnerabilities that have led to losses valued in the millions. In this work, we explore the current state of smart contracts security, prevalent vulnerabilities, and security-analysis tool support, through reviewing the latest advancement and research published in the past five years. We study 13 vulnerabilities in Ethereum smart contracts and their countermeasures, and investigate nine security-analysis tools. Our findings indicate that a uniform set of smart contract vulnerability definitions does not exist in research work and bugs pertaining to the same mechanisms sometimes appear with different names. This inconsistency makes it difficult to identify, categorize, and analyze vulnerabilities. We explain some safeguarding approaches and best practices. However, as technology improves new vulnerabilities may emerge. Regarding tool support, SmartCheck, DefectChecker, contractWard, and sFuzz tools are better choices in terms of more coverage of vulnerabilities; however, tools such as NPChecker, MadMax, Osiris, and Sereum target some specific categories of vulnerabilities if required. While contractWard is relatively fast and more accurate, it can only detect pre-defined vulnerabilities. The NPChecker is slower, however, can find new vulnerability patterns.",
+        "url": "https://www.semanticscholar.org/paper/a433c167ef1373884b68df3aa988c0d29abd5836",
+        "citations": 44,
+        "venue": "Journal of Cybersecurity and Privacy"
+    },
+    {
+        "title": "DDoS Attack Prevention for Internet of Thing Devices Using Ethereum Blockchain Technology",
+        "authors": [
+            "R. Ibrahim",
+            "Q. A. Al-Haija",
+            "Ashraf Ahmad"
+        ],
+        "published_year": 2022,
+        "abstract": "The Internet of Things (IoT) has widely expanded due to its advantages in enhancing the business, industrial, and social ecosystems. Nevertheless, IoT infrastructure is susceptible to several cyber-attacks due to the endpoint devices’ restrictions in computation, storage, and communication capacity. As such, distributed denial-of-service (DDoS) attacks pose a serious threat to the security of the IoT. Attackers can easily utilize IoT devices as part of botnets to launch DDoS attacks by taking advantage of their flaws. This paper proposes an Ethereum blockchain model to detect and prevent DDoS attacks against IoT systems. Additionally, the proposed system can be used to resolve the single points of failure (dependencies on third parties) and privacy and security in IoT systems. First, we propose implementing a decentralized platform in place of current centralized system solutions to prevent DDoS attacks on IoT devices at the application layer by authenticating and verifying these devices. Second, we suggest tracing and recording the IP address of malicious devices inside the blockchain to prevent them from connecting and communicating with the IoT networks. The system performance has been evaluated by performing 100 experiments to evaluate the time taken by the authentication process. The proposed system highlights two messages with a time of 0.012 ms: the first is the request transmitted from the IoT follower device to join the blockchain, and the second is the blockchain response. The experimental evaluation demonstrated the superiority of our system because there are fewer I/O operations in the proposed system than in other related works, and thus it runs substantially faster.",
+        "url": "https://www.semanticscholar.org/paper/2d3caf4ac2c00d3f8264b51ac9ca4d864b449df4",
+        "citations": 43,
+        "venue": "Italian National Conference on Sensors"
+    },
+    {
+        "title": "Rancang Bangun Sistem Informasi Minting Defiapp (Dapp) Non Fungible Token (Nft) Berbasis Website pada Ethereum Blockchain",
+        "authors": [
+            "Dian Gustina",
+            "I. G. A. Suwartane",
+            "Yusuf Buditama"
+        ],
+        "published_year": 2023,
+        "abstract": "Intisari— Minting DApp NFT adalah proses pembuatan token non-fungible (NFT) di dalam aplikasi terdesentralisasi (DApp). NFT adalah aset digital unik yang dibuat menggunakan teknologi blockchain, yang menghasilkan keunikan dan kepemilikan yang terverifikasi. Pada dasarnya, proses minting DApp NFT melibatkan langkah- langkah berikut: Persiapan: Pengguna perlu mengakses DApp yang mendukung fungsi minting NFT. Biasanya, DApp ini berjalan di atas platform blockchain tertentu, seperti Ethereum atau Binance Smart Chain.Verifikasi Kepemilikan: Sebelum pengguna dapat melakukan minting, mereka harus terverifikasi sebagai pemilik aset digital yang ingin diubah menjadi NFT. Proses ini memastikan bahwa NFT yang dihasilkan berhubungan langsung dengan kepemilikan aset tersebut. Pembuatan Kontrak Cerdas: Dalam langkah ini, DApp akan berinteraksi dengan kontrak cerdas (smart contract) yang telah ditetapkan untuk menciptakan NFT. Kontrak cerdas ini berisi logika untuk mengelola pembuatan, pendaftaran, dan kepemilikan NFT. Proses Minting: Setelah persyaratan terpenuhi dan kontrak cerdas telah diberi perintah untuk menciptakan NFT, proses minting dimulai. Data aset digital yang mewakili NFT dienkripsi dalam bentuk token unik di blockchain. Penambahan Metadata: NFT biasanya menyertakan metadata yang memberikan informasi tambahan tentang aset digital, seperti judul, deskripsi, tanda tangan kreator, gambar, video, atau tautan yang relevan. Penambahan Ke Jaringan: Setelah NFT berhasil diciptakan dan metadata ditambahkan, NFT tersebut diunggah ke blockchain dan dapat diakses oleh siapa saja melalui alamat kontrak cerdas atau pasar NFT yang terhubung dengan DApp. Kepemilikan dan Transaksi: Setelah NFT dimiliki oleh seseorang, ia memiliki kendali penuh atas NFT tersebut. Mereka dapat memamerkan, menukar, menjual, atau mentransfer kepemilikannya dengan transaksi blockchain. Minting DApp NFT menawarkan cara yang transparan, terverifikasi, dan unik untuk menciptakan, memperoleh, dan memiliki aset digital di dunia maya. Hal ini telah memberikan kesempatan bagi seniman, kreator konten, dan kolektor untuk menciptakan, berpartisipasi dalam ekosistem NFT, serta memperluas pengalaman di ranah digital. Namun, karena NFT dan ekosistemnya masih dalam tahap perkembangan, penting bagi pengguna untuk tetap berhati-hati, melakukan riset, dan memahami aspek hukum dan keamanan sebelum berpartisipasi dalam aktivitas NFT. \nKata Kunci : Non Fungible Token (NFT), Ethereum, Blockchain, Dapp, Cryptocurrency \nAbstract—Minting DApp NFT is the process of creating non-fungible tokens (NFTs) within a decentralized application (DApp). NFTs are unique digital assets created using blockchain technology, which provide uniqueness and verified ownership. Essentially, the process of minting DApp NFT involves the following steps Preparation: Users need to access a DApp that supports NFT minting functionality. Usually, these DApps run on a specific blockchain platform such as Ethereum or Binance Smart Chain. Ownership Verification: Before users can perform minting, they must be verified as the owners of the digital assets they want to transform into NFTs. This process ensures that the resulting NFT is directly associated with the ownership of the asset. Smart Contract Creation: In this step, the DApp will interact with a smart contract established to create NFTs. This smart contract contains logic to manage the creation, registration, and ownership of NFTs. Minting Process: Once the requirements are met, and the smart contract is instructed to create an NFT, the minting process begins. The data representing the NFT is encrypted in a unique token format on the blockchain. Metadata Addition: NFTs usually include metadata that provides additional information about the digital asset, such as title, description, creator's signature, image, video, or relevant links. Addition to the Network: After the NFT is successfully created, and metadata is added, the NFT is uploaded to the blockchain and can be accessed by anyone through the smart contract address or NFT marketplaces connected to the DApp. Ownership and Transactions: Once the NFT is owned by someone, they have full control over the NFT. They can showcase, trade, sell, or transfer ownership through blockchain transactions. Minting DApp NFT offers a transparent, verified, and unique way to create, acquire, and own digital assets in the virtual world. It has provided opportunities for artists, content creators, and collectors to participate in the NFT ecosystem and expand their experiences in the digital realm. However, as NFTs and their ecosystem are still in a developmental stage, it is crucial for users to remain cautious, conduct research, and understand legal and security aspects before engaging in NFT activities. \nKeyword— Non Fungible Token (NFT), Ethereum, Blockchain, Dapp, Cryptocurrency",
+        "url": "https://www.semanticscholar.org/paper/0d654bea2422d34ef733a9513d5d6ddd549044c7",
+        "citations": 0,
+        "venue": "Jurnal Esensi Infokom Jurnal Esensi Sistem Informasi dan Sistem Komputer"
+    },
+    {
+        "title": "Extracting Godl [sic] from the Salt Mines: Ethereum Miners Extracting Value",
+        "authors": [
+            "Julien Piet",
+            "Jaiden Fairoze",
+            "N. Weaver"
+        ],
+        "published_year": 2022,
+        "abstract": "Cryptocurrency miners have great latitude in deciding which transactions they accept, including their own, and the order in which they accept them. Ethereum miners in particular use this flexibility to collect MEV-Miner Extractable Value-by structuring transactions to extract additional revenue. Ethereum also contains numerous bots that attempt to obtain MEV based on public-but-not-yet-confirmed transactions. Private relays shelter operations from these selfsame bots by directly submitting transactions to mining pools. In this work, we develop an algorithm to detect MEV exploitation present in previously mined blocks. We use our implementation of the detector to analyze MEV usage and profit redistribution, finding that miners make the lion's share of the profits, rather than independent users of the private relays. More specifically, (i) 73% of private transactions hide trading activity or re-distribute miner rewards, and 87.6% of MEV collection is accomplished with privately submitted transactions, (ii) our algorithm finds more than $6M worth of MEV profit in a period of 12 days, two thirds of which go directly to miners, and (iii) MEV represents 9.2% of miners' profit from transaction fees. Furthermore, in those 12 days, we also identify four blocks that contain enough MEV profits to make time-bandit forking attacks economically viable for large miners, undermining the security and stability of Ethereum as a whole.",
+        "url": "https://www.semanticscholar.org/paper/28a18694d9d95825dea84e10474c63f3c986f0af",
+        "citations": 31,
+        "venue": "arXiv.org"
+    },
+    {
+        "title": "Phishing Detection on Ethereum via Attributed Ego-Graph Embedding",
+        "authors": [
+            "Yijun Xia",
+            "Jieli Liu",
+            "Jiajing Wu"
+        ],
+        "published_year": 2022,
+        "abstract": "In recent years, the losses caused by phishing scams on Ethereum have reached a level that cannot be ignored. In such a phishing detection scenario, network embedding is seen as an effective solution. In this brief, we propose an attributed ego-graph embedding framework to distinguish phishing accounts. We first obtain the account labels from an authority site and the transaction records from Ethereum on-chain blocks. Then we extract ego-graphs for each labeled account to represent it. To learn representations for ego-graphs, we utilize non-linear substructures sampled from ego-graphs and use a skip-gram model. Finally, a classifier is applied to graph embeddings to predict phishing accounts. To overcome the limit that transaction attributes are not encoded into ego-graph embeddings, we give nodes and subgraphs with richer attribute-based semantics. Specifically, we propose a novel node relabeling strategy based on Ethereum transaction attributes including transaction amount, number, and direction, and differentiating nodes and subgraphs by new labels. Through this, structural and attributed features of the Ethereum transaction networks can be learned at the same time. Experimental results show that our framework achieves effective performance on class imbalanced phishing detection on Ethereum.",
+        "url": "https://www.semanticscholar.org/paper/32ad6a5899627671f667323c7710c5b347e1a2aa",
+        "citations": 31,
+        "venue": "IEEE Transactions on Circuits and Systems - II - Express Briefs"
+    },
+    {
+        "title": "Cryptocurrency liquidity during the Russia–Ukraine war: the case of Bitcoin and Ethereum",
+        "authors": [
+            "Saliha Theiri",
+            "Ramzi Nekhili",
+            "Jahangir Sultan"
+        ],
+        "published_year": 2022,
+        "abstract": "PurposeThis study examine the response of liquidity of Bitcoin and Ethereum to the Russia-Ukraine war in an event study context and investigate whether the war had a transitory or a permanent effect on cryptocurrency liquidity.Design/methodology/approachA event study was applied to hourly transactions on Bitcoin and Ethereum cryptocurrencies from 1/02/2022 to 31/03/2022. This is period is subdivided in two sample periods to capture transitory and permanent effects. The transitory effect is investigated over a window spanning -20 and +20 days. For a more extended post-event period, a linear regression model was applied to analyze the effects of other factors on the liquidity risk of BTC and ETH.FindingsThe findings reveal a significant but temporary impact of the Russia–Ukraine war on the liquidity of Bitcoin and Ethereum. Liquidity levels have increased within the first two days around the event day and then returned to the pre-event level after that. However, the response of BTC and ETH cryptocurrencies' liquidities to the Russian invasion of Ukraine is not uniform.Originality/valueThis is the first paper that assesses the liquidity level of two major cryptocurrencies (Bitcoin and Ethereum) in response to an extreme event: the Russia–Ukraine war. The hypothesis is that trading in the cryptocurrency market will increase due to market participants' goal of evading regulatory sanctions. Furthermore, market participants may also take advantage of cryptocurrencies' popularity as safe-haven assets.",
+        "url": "https://www.semanticscholar.org/paper/2851e82fcc7af443a97f63961f5bb46bbb53b9a4",
+        "citations": 32,
+        "venue": "The Journal of Risk Finance"
+    },
+    {
+        "title": "Supply Chain Inventory Sharing Using Ethereum Blockchain and Smart Contracts",
+        "authors": [
+            "Ilhaam A. Omar",
+            "Raja Jayaraman",
+            "Mazin S. Debe",
+            "Haya R. Hasan",
+            "K. Salah",
+            "Mohammed A. Omar"
+        ],
+        "published_year": 2022,
+        "abstract": "Information sharing is essential for coordination and stakeholder integration and is crucial to achieving sustainable supply chain operations. Furthermore, improved information sharing assists retailers by reducing the time spent looking for alternative suppliers to meet the unexpected demand surge during pandemics. Recent advances in networking and distributed ledger technologies have enabled secure, improved information communication and broader connectivity. However, due to system interoperability, information quality, confidentiality, and trust, information cannot be exchanged seamlessly, resulting in the inefficiency of managing supply chain operations. In this paper, we propose a blockchain-based inventory sharing approach based on smart contracts using a private Ethereum network to link suppliers and retailers. Our approach combines blockchain technology with decentralized storage to increase transparency, trust, and security of supply chain transactions. We present a generalized mechanism for secure information sharing that includes comprehensive algorithms to capture supply chain stakeholder interactions that enhance trust among participating entities. The smart contract was developed and validated using the Remix IDE, and the code is made publicly available on Github. We analyze the solution for various security vulnerabilities and provide a detailed cost analysis for various stakeholder transactions in the supply chain. Our solution demonstrates that a blockchain-based approach reduces inefficiencies, is economical, commercially viable, and provides improved information connectivity among supply chain stakeholders in a trusted and secure way.",
+        "url": "https://www.semanticscholar.org/paper/30c79c3c8cac36c00d7ae4d49b518c05e8f131c1",
+        "citations": 30,
+        "venue": "IEEE Access"
+    },
+    {
+        "title": "FA-GNN: Filter and Augment Graph Neural Networks for Account Classification in Ethereum",
+        "authors": [
+            "Jieli Liu",
+            "Jiatao Zheng",
+            "Jiajing Wu",
+            "Zibin Zheng"
+        ],
+        "published_year": 2022,
+        "abstract": "As the first blockchain platform supporting smart contracts, Ethereum has become increasingly popular in recent years and generates a massive number of transaction records. Nowadays, millions of accounts in Ethereum have been reported to participate in a variety of businesses, and some of them have been found to be involved in illegal behaviors or even cyber-crimes by exploiting the pseudonymous nature of blockchain. Therefore, there is an urgent need for an effective method to conduct account classification and audit transaction behaviors of each account. In this paper, we model the Ethereum transaction records as a transaction network, and the account classification problem is converted to a node classification problem. Based on the Ethereum transaction network, we propose a novel framework named <bold><underline>F</underline></bold>ilter and <bold><underline>A</underline></bold>ugment <bold><underline>G</underline></bold>raph <bold><underline>N</underline></bold>eural <bold><underline>N</underline></bold>etwork (FA-GNN), which can retain the information of important neighbors and augment node features with high-order information. Experimental results demonstrate that our proposed FA-GNN outperforms state-of-the-art methods in Ethereum account classification.",
+        "url": "https://www.semanticscholar.org/paper/39bf80f5a7f97d760b15273e230fc4117152d203",
+        "citations": 32,
+        "venue": "IEEE Transactions on Network Science and Engineering"
+    },
+    {
+        "title": "Token Spammers, Rug Pulls, and Sniper Bots: An Analysis of the Ecosystem of Tokens in Ethereum and in the Binance Smart Chain (BNB)",
+        "authors": [
+            "Federico Cernera",
+            "Massimo La Morgia",
+            "Alessandro Mei",
+            "Francesco Sassi"
+        ],
+        "published_year": 2022,
+        "abstract": "In this work, we perform a longitudinal analysis of the BNB Smart Chain and Ethereum blockchain from their inception to March 2022. We study the ecosystem of the tokens and liquidity pools, highlighting analogies and differences between the two blockchains. We discover that about 60% of tokens are active for less than one day. Moreover, we find that 1% of addresses create an anomalous number of tokens (between 20% and 25%). We discover that these tokens are used as disposable tokens to perform a particular type of rug pull, which we call 1-day rug pull. We quantify the presence of this operation on both blockchains discovering its prevalence on the BNB Smart Chain. We estimate that 1-day rug pulls generated $240 million in profits. Finally, we present sniper bots, a new kind of trader bot involved in these activities, and we detect their presence and quantify their activity in the rug pull operations.",
+        "url": "https://www.semanticscholar.org/paper/63853b63ef5f693be3d95e553a8341bda590c370",
+        "citations": 29,
+        "venue": "USENIX Security Symposium"
+    },
+    {
+        "title": "Review of Automated Vulnerability Analysis of Smart Contracts on Ethereum",
+        "authors": [
+            "Heidelinde Rameder",
+            "Monika Di Angelo",
+            "G. Salzer"
+        ],
+        "published_year": 2022,
+        "abstract": "Programs on public blockchains often handle valuable assets, making them attractive targets for attack. At the same time, it is challenging to design correct blockchain applications. Checking code for potential vulnerabilities is a viable option to increase trust. Therefore, numerous methods and tools have been proposed with the intention to support developers and analysts in detecting code vulnerabilities. Moreover, publications keep emerging with different focus, scope, and quality, making it difficult to keep up with the field and to identify relevant trends. Thus, regular reviews are essential to keep pace with the varied developments in a structured manner. Regarding blockchain programs, Ethereum is the platform most widely used and best documented. Moreover, applications based on Ethereum are entrusted with billions of USD. Like on similar blockchains, they are subject to numerous attacks and losses due to vulnerabilities that exist at all levels of the ecosystem. Countermeasures are in great demand. In this work, we perform a systematic literature review (SLR) to assess the state of the art regarding automated vulnerability analysis of smart contracts on Ethereum with a focus on classifications of vulnerabilities, detection methods, security analysis tools, and benchmarks for the assessment of tools. Our initial search of the major on-line libraries yields more than 1,300 publications. For the review, we apply a clear strategy and protocol to assure consequent, comprehensive, and reproducible documentation and results. After collecting the initial results, cleaning up references, removing duplicates and applying the inclusion and exclusion criteria, we retain 303 publications that include 214 primary studies, 70 surveys and 19 SLRs. For quality appraisal, we assess their intrinsic quality (derived from the reputation of the publication venue) as well as their contextual quality (determined by rating predefined criteria). For about 200 publications with at least a medium score, we extract the vulnerabilities, methods, and tools addressed, among other data. In a second step, we synthesize and structure the data into a classification of both the smart contract weaknesses and the analysis methods. Furthermore, we give an overview of tools and benchmarks used to evaluate tools. Finally, we provide a detailed discussion.",
+        "url": "https://www.semanticscholar.org/paper/51758b4f0bf2918bae8f1362de49bd4c65640980",
+        "citations": 29,
+        "venue": "Frontiers in Blockchain"
+    },
+    {
+        "title": "Pied-Piper: Revealing the Backdoor Threats in Ethereum ERC Token Contracts",
+        "authors": [
+            "Fuchen Ma",
+            "Meng Ren",
+            "Lerong Ouyang",
+            "Yuanliang Chen",
+            "Juan Zhu",
+            "Ting Chen",
+            "Yingli Zheng",
+            "Xiao Dai",
+            "Yu Jiang",
+            "Jiaguang Sun"
+        ],
+        "published_year": 2022,
+        "abstract": "With the development of decentralized networks, smart contracts, especially those for ERC tokens, are attracting more and more Dapp users to implement their applications. There are some functions in ERC token contracts that only a specific group of accounts could invoke. Among those functions, some even can influence other accounts or the whole system without prior notice or permission. These functions are referred to as contract backdoors. Once exploited by an attacker, they can cause property losses and harm users’ privacy. In this work, we propose Pied-Piper, a hybrid analysis method that integrates datalog analysis and directed fuzzing to detect backdoor threats in Ethereum ERC token contracts. First, datalog analysis is applied to abstract the data structures and identification rules related to the threats for preliminary static detection. Then, directed fuzzing is applied to eliminate false positives caused by the static analysis. We first evaluated Pied-Piper on 200 smart contracts, which are injected with different types of backdoors. It reported all problems without false positives, and none of the injected problems was missed. Then, we applied Pied-Piper on 13,484 real token contracts deployed on Ethereum. Pied-Piper reported 189 confirmed problems, four of which have been assigned unique CVE ids while others are still in the review process. Each contract takes 8.03 seconds for datalog analysis on average, and the fuzzing engine can eliminate the false positives within one minute.",
+        "url": "https://www.semanticscholar.org/paper/ea67df9c35f701d8e5261e878f46853f1a9af3bb",
+        "citations": 27,
+        "venue": "ACM Transactions on Software Engineering and Methodology"
+    },
+    {
+        "title": "Is decentralized finance actually decentralized? A social network analysis of the Aave protocol on the Ethereum blockchain",
+        "authors": [
+            "Ziqiao Ao",
+            "Gergely Horváth",
+            "Luyao Zhang"
+        ],
+        "published_year": 2022,
+        "abstract": "Decentralized finance (DeFi) has the potential to disrupt centralized finance by validating peer-to-peer transactions through tamper-proof smart contracts, thus significantly lowering the transaction cost charged by financial intermediaries. However, the actual realization of peer-to-peer transactions and the levels and effects of decentralization are largely unknown. Our research pioneers a blockchain network study that applies social network analysis to measure the level, dynamics, and impacts of decentralization in DeFi token transactions on the Ethereum blockchain. First, we find a significant core-periphery structure in the AAVE token transaction network where the cores include the two largest centralized crypto exchanges. Second, we provide evidence that multiple network features consistently characterize decentralization dynamics. Finally, we document that a more decentralized network significantly predicts a higher return and lower volatility of the decentralized market of AAVE tokens on the Ethereum blockchain. We point out that our approach is seminal for inspiring future extensions related to the facets of application scenarios, research questions, and methodologies on the mechanics of blockchain decentralization.",
+        "url": "https://www.semanticscholar.org/paper/b4b6a6f0cf6b813a1b63f623e2f7c4c0aa5c3747",
+        "citations": 27,
+        "venue": ""
+    },
+    {
+        "title": "LGBM: a machine learning approach for Ethereum fraud detection",
+        "authors": [
+            "R. Aziz",
+            "Mohammed Farhan Baluch",
+            "Sarthak Patel",
+            "Abdul Hamid Ganie"
+        ],
+        "published_year": 2022,
+        "abstract": null,
+        "url": "https://www.semanticscholar.org/paper/95f298d98744b6cfe2c1a06ba6177b08f379dc8e",
+        "citations": 90,
+        "venue": "International journal of information technology"
+    },
+    {
+        "title": "Ethereum Smart Contract Analysis Tools: A Systematic Review",
+        "authors": [
+            "Satpal Singh Kushwaha",
+            "Sandeep Joshi",
+            "Dilbag Singh",
+            "Manjit Kaur",
+            "Heung-No Lee"
+        ],
+        "published_year": 2022,
+        "abstract": "Blockchain technology and its applications are gaining popularity day by day. It is a ground-breaking technology that allows users to communicate without the need of a trusted middleman. A smart contract (self-executable code) is deployed on the blockchain and auto executes due to a triggering condition. In a no-trust contracting environment, smart contracts can establish trust among parties. Terms and conditions embedded in smart contracts will be imposed immediately when specified criteria have been fulfilled. Due to this, the malicious assailants have a special interest in smart contracts. Blockchains are immutable means if some transaction is deployed or recorded on the blockchain, it becomes unalterable. Thus, smart contracts must be analyzed to ensure zero security vulnerabilities or flaws before deploying the same on the blockchain because a single vulnerability can lead to the loss of millions. For analyzing the security vulnerabilities of smart contracts, various analysis tools have been developed to create safe and secure smart contracts. This paper presents a systematic review on Ethereum smart contracts analysis tools. Initially, these tools are categorized into static and dynamic analysis tools. Thereafter, different sources code analysis techniques are studied such as taint analysis, symbolic execution, and fuzzing techniques. In total, 86 security analysis tools developed for Ethereum blockchain smart contract are analyzed regardless of tool type and analysis approach. Finally, the paper highlights some challenges and future recommendations in the field of Ethereum smart contracts.",
+        "url": "https://www.semanticscholar.org/paper/ba8078a897319d98a8fb0a7630321781a8f2d581",
+        "citations": 80,
+        "venue": "IEEE Access"
+    },
+    {
+        "title": "Time-travel Investigation: Toward Building a Scalable Attack Detection Framework on Ethereum",
+        "authors": [
+            "Siwei Wu",
+            "Lei Wu",
+            "Yajin Zhou",
+            "Runhuai Li",
+            "Zhi Wang",
+            "Xiapu Luo",
+            "Cong Wang",
+            "K. Ren"
+        ],
+        "published_year": 2022,
+        "abstract": "Ethereum has been attracting lots of attacks, hence there is a pressing need to perform timely investigation and detect more attack instances. However, existing systems suffer from the scalability issue due to the following reasons. First, the tight coupling between malicious contract detection and blockchain data importing makes them infeasible to repeatedly detect different attacks. Second, the coarse-grained archive data makes them inefficient to replay transactions. Third, the separation between malicious contract detection and runtime state recovery consumes lots of storage. In this article, we propose a scalable attack detection framework named EthScope, which overcomes the scalability issue by neatly re-organizing the Ethereum state and efficiently locating suspicious transactions. It leverages the fine-grained state to support the replay of arbitrary transactions and proposes a well-designed schema to optimize the storage consumption. The performance evaluation shows that EthScope can solve the scalability issue, i.e., efficiently performing a large-scale analysis on billions of transactions, and a speedup of around \\( \\text{2,300}\\times \\) when replaying transactions. It also has lower storage consumption compared with existing systems. Further analysis shows that EthScope can help analysts understand attack behaviors and detect more attack instances.",
+        "url": "https://www.semanticscholar.org/paper/dbf011123c49c6c9440f79a52f2704db458de089",
+        "citations": 24,
+        "venue": "ACM Transactions on Software Engineering and Methodology"
+    },
+    {
+        "title": "Two More Attacks on Proof-of-Stake GHOST/Ethereum",
+        "authors": [
+            "Joachim Neu",
+            "Ertem Nusret Tas",
+            "DavidN C. Tse"
+        ],
+        "published_year": 2022,
+        "abstract": "Ethereum, the world's second largest cryptocurrency with a market capitalization exceeding 120 billion USD as of this writing, aims to switch from Proof-of-Work (PoW) to Proof-of-Stake (PoS) based consensus later in the year 2022 (`the Merge'). Yet, so far, the proposed PoS consensus protocol lacks in rigorous security analysis. We present two new attack strategies targeting the PoS Ethereum consensus protocol. The first attack suggests a fundamental conceptual incompatibility between PoS and the Greedy Heaviest-Observed Sub-Tree (GHOST) fork choice paradigm employed by PoS Ethereum. In a nutshell, PoS allows an adversary with a vanishing amount of stake to produce an unlimited number of equivocating blocks. While most equivocating blocks will be orphaned, such orphaned 'uncle blocks' still influence fork choice under the GHOST paradigm, bestowing upon the adversary devastating control over the canonical chain. While the Latest Message Driven (LMD) aspect of current PoS Ethereum prevents a straightforward application of this attack, our second attack shows how LMD specifically can be exploited to obtain a new variant of the balancing attack that overcomes 'proposer boosting', a recent protocol addition that was intended to mitigate balancing-type attacks. Thus, in its current form, PoS Ethereum without and with LMD is vulnerable to our first and second attack, respectively.",
+        "url": "https://www.semanticscholar.org/paper/71495ab57440c34578f5a01813699b98fb3f984d",
+        "citations": 20,
+        "venue": "ConsensusDay@CCS"
+    },
+    {
+        "title": "Automatic generation of Ethereum-based Smart Contracts for Agri-Food Traceability System",
+        "authors": [
+            "Lodovica Marchesi",
+            "K. Mannaro",
+            "M. Marchesi",
+            "R. Tonelli"
+        ],
+        "published_year": 2022,
+        "abstract": "There is a growing demand for transparency along the agri-food chain, both from customers and governments. The adoption of blockchain technology to enable secure traceability for the management of the agri-food chain, provide information such as the provenance of a food product and prevent food fraud, is emerging rapidly, due to the inherent trust and inalterability provided by this technology. However, developing the right smart contracts for these use cases is even more of a challenge than it is for those used in other fields. Several management systems for the agri-food chain based on blockchain technology and smart contract have been proposed, all however ad-hoc for a specific product or production process and difficult to generalize. In this paper, we propose a new approach to easily customize and compose general Ethereum-based smart contracts designed for the agri-food industrial domain, to be able to reuse the code and modules and automate the process to shorten development times, while keeping it safe and reliable. Starting from the definition of the real production process, we aim to automatically generate both the smart contracts to manage the system and the user interfaces to interact with them, thus producing a system that works semi-automatically. Additionally, we describe a honey production case study to show how our approach works. Future work will first extend the scope of the approach to other supply chains, furthermore, while the current platform used is Ethereum, in the future our approach will be easily extended to other blockchain platforms.",
+        "url": "https://www.semanticscholar.org/paper/ca77166397887b5d4ffda769db408c4514832879",
+        "citations": 21,
+        "venue": "IEEE Access"
+    },
+    {
+        "title": "Is My Transaction Done Yet? An Empirical Study of Transaction Processing Times in the Ethereum Blockchain Platform",
+        "authors": [
+            "Michael Pacheco",
+            "G. Oliva",
+            "Gopi Krishnan Rajbahadur",
+            "Ahmed E. Hassan"
+        ],
+        "published_year": 2022,
+        "abstract": "Ethereum is one of the most popular platforms for the development of blockchain-powered applications. These applications are known as ÐApps. When engineering ÐApps, developers need to translate requests captured in the front-end of their application into one or more smart contract transactions. Developers need to pay for these transactions and, the more they pay (i.e., the higher the gas price), the faster the transaction is likely to be processed. Developing cost-effective ÐApps is far from trivial, as developers need to optimize the balance between cost (transaction fees) and user experience (transaction processing times). Online services have been developed to provide transaction issuers (e.g., ÐApp developers) with an estimate of how long transactions will take to be processed given a certain gas price. These estimation services are crucial in the Ethereum domain and several popular wallets such as Metamask rely on them. However, despite their key role, their accuracy has not been empirically investigated so far. In this article, we quantify the transaction processing times in Ethereum, investigate the relationship between processing times and gas prices, and determine the accuracy of state-of-the-practice estimation services. Our results indicate that transactions are processed in a median of 57 seconds and that 90% of the transactions are processed within 8 minutes. We also show that higher gas prices result in faster transaction processing times with diminishing returns. In particular, we observe no practical difference in processing time between expensive and very expensive transactions. With regards to the accuracy of processing time estimation services, we observe that they are equivalent. However, when stratifying transactions by gas prices, we observe that Etherscan’s Gas Tracker is the most accurate estimation service for the very cheap and cheap transactions. EthGasStation’s Gas Price API, in turn, is the most accurate estimation service for regular, expensive, and very expensive transactions. In a post-hoc study, we design a simple linear regression model with only one feature that outperforms the Gas Tracker for very cheap and cheap transactions and that performs as accurately as the EthGasStation model for the remaining categories. Based on our findings, ÐApp developers can make more informed decisions concerning the choice of the gas price of their application-issued transactions.",
+        "url": "https://www.semanticscholar.org/paper/178faba992424b431fcae43c39799ea6ab348172",
+        "citations": 23,
+        "venue": "ACM Transactions on Software Engineering and Methodology"
+    },
+    {
+        "title": "Ethereum Account Classification Based on Graph Convolutional Network",
+        "authors": [
+            "Tao Huang",
+            "Dan-yan Lin",
+            "Jiajing Wu"
+        ],
+        "published_year": 2022,
+        "abstract": "Accounts in Ethereum are found to be involved in various services or businesses. Account classification can help us detect illegal behavior, track transactions, and de-anonymize the Ethereum transaction system. In this brief, we make use of Graph Convolutional Network (GCN) to solve the account classification problem in Ethereum. We model the Ethereum transaction records as a large-scale transaction network and find that the network is with high heterophily, in which accounts with different features and different labels are connected. In order to solve this problem, we propose a GCN-based model called EH-GCN. The experimental results on a realistic Ethereum dataset show that the proposed method achieves the most advanced classification performance, and results on benchmarks show it produces a competitive performance under homophily.",
+        "url": "https://www.semanticscholar.org/paper/db0bdb4bcf1d7e383d333715b614b5cf4a42bd0e",
+        "citations": 21,
+        "venue": "IEEE Transactions on Circuits and Systems - II - Express Briefs"
+    },
+    {
+        "title": "Multiple-Layer Security Threats on the Ethereum Blockchain and Their Countermeasures",
+        "authors": [
+            "Li Duan",
+            "Yangyang Sun",
+            "Kejia Zhang",
+            "Yong Ding"
+        ],
+        "published_year": 2022,
+        "abstract": "Blockchain technology has been widely used in digital currency, Internet of Things, and other important fields because of its decentralization, nontampering, and anonymity. The vigorous development of blockchain cannot be separated from the security guarantee. However, there are various security threats within the blockchain that have shown in the past to cause huge financial losses. This paper aims at studying the multi-level security threats existing in the Ethereum blockchain, and exploring the security protection schemes under multiple attack scenarios. There are ten attack scenarios studied in this paper, which are replay attack, short url attack, false top-up attack, transaction order dependence attack, integer overflow attack, re-entrancy attack, honeypot attack, airdrop hunting attack, writing of arbitrary storage address attack, and gas exhaustion denial of service attack. This paper also proposes protection schemes. Finally, these schemes are evaluated by experiments. Experimental results show that our approach is efficient and does not bring too much extra cost and that the time cost has doubled at most.",
+        "url": "https://www.semanticscholar.org/paper/ef99874c23c48623d788f27f02a859650b0deb8a",
+        "citations": 20,
+        "venue": "Secur. Commun. Networks"
+    },
+    {
+        "title": "MinRoot: Candidate Sequential Function for Ethereum VDF",
+        "authors": [
+            "D. Khovratovich",
+            "Mary Maller",
+            "P. Tiwari"
+        ],
+        "published_year": 2022,
+        "abstract": "We present a candidate sequential function for a VDF protocol to be used within the Ethereum ecosystem. The new function, called MinRoot , is an optimized iterative algebraic transformation and is a strict improvement over competitors VeeDo and Sloth++. We analyze various attacks on sequentiality and suggest weakened versions for public scrutiny. We also announce bounties on certain research directions in cryptanalysis",
+        "url": "https://www.semanticscholar.org/paper/706b6148a5b11e4edf3d9c07b5d1bfa704223352",
+        "citations": 22,
+        "venue": "IACR Cryptology ePrint Archive"
+    },
+    {
+        "title": "ScrawlD: A Dataset of Real World Ethereum Smart Contracts Labelled with Vulnerabilities",
+        "authors": [
+            "Chavhan Sujeet Yashavant",
+            "Saurabh Kumar",
+            "Amey Karkare"
+        ],
+        "published_year": 2022,
+        "abstract": "Smart contracts on Ethereum handle millions of U.S. Dollars and other financial assets. In the past, attackers have exploited smart contracts to steal these assets. The Ethereum community has developed plenty of tools to detect vulnerable smart contracts. However, there is no standardized data set to evaluate these existing tools, or any new tools developed. There is a need for an unbiased standard benchmark of real-world Ethereum smart contracts. We have created ScrawlD: an annotated data set of real-world smart contracts taken from the Ethereum network. The data set is labelled using 5 tools that detect various vulnerabilities in smart contracts, using majority voting.",
+        "url": "https://www.semanticscholar.org/paper/f26b268c2533b0acf322ab9ee88e508c817f3a9c",
+        "citations": 15,
+        "venue": "arXiv.org"
+    },
+    {
+        "title": "Graph Analysis of the Ethereum Blockchain Data: A Survey of Datasets, Methods, and Future Work",
+        "authors": [
+            "Arijit Khan"
+        ],
+        "published_year": 2022,
+        "abstract": "Ethereum, currently the most actively-used and the second-largest blockchain platform, consists of a heterogeneous ecosystem, cohabited by human users, smart contracts (autonomous agents), ether (native cryptocurrency), tokens (digital assets), dApps (decentralized applications), and DeFi (decentralized finance). These key actors in the Ethereum interact with each other via transactions and contract calls. Given the highly connected structure, graph-based modeling is an optimal tool to analyze the data stored in Ethereum blockchain. Recently, several research works performed graph analysis on the publicly available Ethereum blockchain data to reveal insights into its transactions and for important downstream tasks, e.g., cryptocurrency price prediction, address clustering, phishing scams and counterfeit tokens detection. In this work, we conduct an in-depth survey of the existing literature. We categorize them based on publication years, venues, core ranking, and authors' affiliations, data usage and graphs construction, graph mining and machine learning techniques employed, and the new insights derived by them. We conclude by discussing our recommendations on the future work. Our article will be useful to data scientists, researchers, financial analysts, and blockchain enthusiasts.",
+        "url": "https://www.semanticscholar.org/paper/4c17befe4bb3cb345eeee26b54fc2da9108ab9bf",
+        "citations": 17,
+        "venue": "International Congress on Blockchain and Applications"
+    },
+    {
+        "title": "Tutela: An Open-Source Tool for Assessing User-Privacy on Ethereum and Tornado Cash",
+        "authors": [
+            "Mike Wu",
+            "Will McTighe",
+            "Kaili Wang",
+            "István András Seres",
+            "Nick Bax",
+            "Manuel Puebla",
+            "Mariano Mendez",
+            "Federico Carrone",
+            "Tom'as De Mattey",
+            "Herman O. Demaestri",
+            "Mariano Nicolini",
+            "Pedro Fontana"
+        ],
+        "published_year": 2022,
+        "abstract": "A common misconception among blockchain users is that pseudonymity guarantees privacy. The reality is almost the opposite. Every transaction one makes is recorded on a public ledger and reveals information about one's identity. Mixers, such as Tornado Cash, were developed to preserve privacy through\"mixing\"transactions with those of others in an anonymity pool, making it harder to link deposits and withdrawals from the pool. Unfortunately, it is still possible to reveal information about those in the anonymity pool if users are not careful. We introduce Tutela, an application built on expert heuristics to report the true anonymity of an Ethereum address. In particular, Tutela has three functionalities: first, it clusters together Ethereum addresses based on interaction history such that for an Ethereum address, we can identify other addresses likely owned by the same entity; second, it shows Ethereum users their potentially compromised transactions; third, Tutela computes the true size of the anonymity pool of each Tornado Cash mixer by excluding potentially compromised transactions. A public implementation of Tutela can be found at https://github.com/TutelaLabs/tutela-app. To use Tutela, visit https://www.tutela.xyz.",
+        "url": "https://www.semanticscholar.org/paper/2a6dc55cc3d436d4950ff2b80ff73be6e49d3cef",
+        "citations": 17,
+        "venue": "arXiv.org"
+    },
+    {
+        "title": "Defining user spectra to classify Ethereum users based on their behavior",
+        "authors": [
+            "Gianluca Bonifazi",
+            "Enrico Corradini",
+            "D. Ursino",
+            "L. Virgili"
+        ],
+        "published_year": 2022,
+        "abstract": null,
+        "url": "https://www.semanticscholar.org/paper/38dbc13aca7063bc39e138d5baa2d28e2f108988",
+        "citations": 16,
+        "venue": "Journal of Big Data"
+    },
+    {
+        "title": "AuthROS: Secure Data Sharing Among Robot Operating Systems based on Ethereum",
+        "authors": [
+            "Shenhui Zhang",
+            "Wenkai Li",
+            "Xiaoqi Li",
+            "Boyi Liu"
+        ],
+        "published_year": 2022,
+        "abstract": "The Robot Operating System (ROS) streamlines human processes, increasing the efficiency of various production tasks. However, the security of data transfer operations in ROS is still in its immaturity. Securing data exchange between several robots is a significant problem. This paper proposes AuthROS, an Ethereum blockchain-based secure data sharing method, for robot communication. It is a ROS node authorization system capable of ensuring the immutability and security of private data flow between ROS nodes of any size. To ensure data security, AuthROS employs the smart contract for permission granting and identification, SM2-based key exchange, and SM4-based plaintext encryption techniques. In addition, we deploy a data digest upload technique to optimize data query and upload performance. Finally, the experimental findings reveal that AuthROS has strong security, time performance, and node forging in cases where data should be recorded and robots need to remain immobile.",
+        "url": "https://www.semanticscholar.org/paper/7aacfd408cb4555f9b7632528c8dc27572320043",
+        "citations": 17,
+        "venue": "International Conference on Software Quality, Reliability and Security"
+    },
+    {
+        "title": "A Feature-Based Robust Method for Abnormal Contracts Detection in Ethereum Blockchain",
+        "authors": [
+            "Ali Aljofey",
+            "Abdur Rasool",
+            "Qingshan Jiang",
+            "Qiang Qu"
+        ],
+        "published_year": 2022,
+        "abstract": "Blockchain technology has allowed many abnormal schemes to hide behind smart contracts. This causes serious financial losses, which adversely affects the blockchain. Machine learning technology has mainly been utilized to enable automatic detection of abnormal contract accounts in recent years. In spite of this, previous machine learning methods have suffered from a number of disadvantages: first, it is extremely difficult to identify features that enable accurate detection of abnormal contracts, and based on these features, statistical analysis is also ineffective. Second, they ignore the imbalances and repeatability of smart contract accounts, which often results in overfitting of the model. In this paper, we propose a data-driven robust method for detecting abnormal contract accounts over the Ethereum Blockchain. This method comprises hybrid features set by integrating opcode n-grams, transaction features, and term frequency-inverse document frequency source code features to train an ensemble classifier. The extra-trees and gradient boosting algorithms based on weighted soft voting are used to create an ensemble classifier that balances the weaknesses of individual classifiers in a given dataset. The abnormal and normal contract data are collected by analyzing the open source etherscan.io, and the problem of the imbalanced dataset is solved by performing the adaptive synthetic sampling. The empirical results demonstrate that the proposed individual feature sets are useful for detecting abnormal contract accounts. Meanwhile, combining all the features enhances the detection of abnormal contracts with significant accuracy. The experimental and comparative results show that the proposed method can distinguish abnormal contract accounts for the data-driven security of blockchain Ethereum with satisfactory performance metrics.",
+        "url": "https://www.semanticscholar.org/paper/5e5b293676b41f6b5a6addbdeb8ad2f6e3a4969b",
+        "citations": 16,
+        "venue": "Electronics"
+    },
+    {
+        "title": "Ethereum Proof-of-Stake under Scrutiny",
+        "authors": [
+            "Ulysse Pavloff",
+            "Yackolley Amoussou-Guenou",
+            "Sara Tucci-Piergiovanni"
+        ],
+        "published_year": 2022,
+        "abstract": "Ethereum has undergone a recent change called the Merge, which made Ethereum a Proof-of-Stake blockchain shifting closer to BFT consensus. Ethereum, which wished to keep the best of the two protocol designs (BFT and Nakomoto-style), now has a convoluted consensus protocol as its core. The result is a blockchain being possibly produced in a tree-like form while participants try to finalize blocks. Several attacks jeopardizing liveness have been found in this new setting. The Ethereum community has responded by creating a patch. We discovered a new attack on the patched protocol. To support our analysis, we propose a new high-level formalization of the properties of liveness and availability of the Ethereum blockchain, and we provide a pseudo-code. We believe this formalization to be helpful for other analyses as well. Our results yield that the Ethereum Proof-of-Stake has probabilistic liveness, influenced by the parameter describing the time frame allowed for validators to change their mind about the current main chain.",
+        "url": "https://www.semanticscholar.org/paper/83c655cd33218b3eccb32bff11cbc3da8856726f",
+        "citations": 19,
+        "venue": "ACM Symposium on Applied Computing"
+    },
+    {
+        "title": "Eth-PSD: A Machine Learning-Based Phishing Scam Detection Approach in Ethereum",
+        "authors": [
+            "A. H. H. Kabla",
+            "Mohammed Anbar",
+            "S. Manickam",
+            "Shankar Karupayah"
+        ],
+        "published_year": 2022,
+        "abstract": "Recently, the rapid flourish of blockchain technology in the financial field has attracted many cybercriminals’ attention to launching blockchain-based attacks such as ponzi schemes, scam wallets, and phishing scams. Currently, Ethereum is the most prominent blockchain-based platform and the first that supports smart contracts. However, the number of phishing scam accounts are reportedly more than 50% of all cybercrimes in Ethereum. In contrast, this paper proposes a detection mechanism called Ethereum Phishing Scam Detection (Eth-PSD) that attempts to detect phishing scam-related transactions using a novel machine learning-based approach. Eth-PSD tackles some of the limitations in the existing works, such as the use of imbalanced datasets, complex feature engineering, and lower detection accuracy. We also investigated the aspects of constructing a new updated, balanced dataset that can be used to evaluate Eth-PSD effectively. Our experimental results indicate that Eth-PSD could efficiently detect the phishing scam on Ethereum with a detection accuracy of 98.11%, with a very low False Positive Rate of 0.01. Taken together, Eth-PSD showed a superior advantage compared to the existing works in reducing the dimensionality of the dataset by feature engineering and achieved an overall detection accuracy with an improvement of at least 6% compared to other existing solutions from the related work.",
+        "url": "https://www.semanticscholar.org/paper/201176b199cb16616c496b7f209cb5badaf289a8",
+        "citations": 19,
+        "venue": "IEEE Access"
+    },
+    {
+        "title": "Proposed Model for Secured Data Storage in Decentralized Cloud by Blockchain Ethereum",
+        "authors": [
+            "N. Khan",
+            "Hanan Aljoaey",
+            "M. Tabassum",
+            "A. Farzamnia",
+            "Tripti Sharma",
+            "Yew Hoe Tung"
+        ],
+        "published_year": 2022,
+        "abstract": "Since cloud computing is an essential component of any modern company (usually accounting for a considerable share of information technology (IT) infrastructure investment), consumers rely on cloud services. Data privacy and security are worries when data remains in third-party storage. Existing document version control systems are centralized and at risk from data loss, as seen by higher time utilization and incorrect document update procedures that allow modifications to a document without the awareness of other network operators. Underutilized peer resources might be leveraged to construct storage. According to this argument, an elevated level of data security may be obtained by encrypting the data and dispersing it among numerous nodes. In this study, we attempted to review the security of cloud systems when using the blockchain Ethereum, and cloud computing was briefly discussed with its advantages and disadvantages. The idea of a decentralized cloud was briefly demonstrated with blockchain technology. Furthermore, previous papers were reviewed and presented in tabular form. This dictated that there are still research gaps in the field of blockchain-based cloud computing systems. This study proposed a model for secured data storage over a decentralized cloud by blockchain Ethereum.",
+        "url": "https://www.semanticscholar.org/paper/f336be1ef25771a5b07b5d6ce12734eba4182fff",
+        "citations": 19,
+        "venue": "Electronics"
+    },
+    {
+        "title": "CTRF: Ethereum-Based Ponzi Contract Identification",
+        "authors": [
+            "Xuezhi He",
+            "Tan Yang",
+            "Liping Chen"
+        ],
+        "published_year": 2022,
+        "abstract": "In recent years, blockchain technology has been developing rapidly. More and more traditional industries are using blockchain as a platform for information storage and financial transactions, mainly because of its new characteristics of non-tamperability and decentralization compared with the traditional systems. As a representative of blockchain 2.0, Ethereum has gained popularity upon its introduction. However, because of the anonymity of blockchain, Ethereum has also attracted the attention of some unscrupulous people. Currently, millions of contracts are deployed on Ethereum, many of which are fraudulent contracts deployed by unscrupulous people for profit, and these contracts are causing huge losses to investors worldwide. Ponzi contracts are typical of these contracts, which mainly reward the funds invested by later investors to early investors, and later investors will have no gain. However, although there are some studies for identifying Ponzi contracts on Ethereum, there is some room for progress in the research. Therefore, we propose a method to detect Ponzi scheme contracts on Ethereum-CTRF. This method forms a dataset by extracting the word features and sequence features of the smart contract’s code and the features of transactions. The dataset is divided into a training set and a test set. Oversampling is performed on the training set to deal with the problem of positive and negative sample imbalance. Finally, the model is trained on the training set and tested on the test set. The experimental results show that the model has significantly improved recall compared with existing Ponzi contract detection methods.",
+        "url": "https://www.semanticscholar.org/paper/889196b8461e31996b6da9ca776f7210599a6db1",
+        "citations": 16,
+        "venue": "Security and Communication Networks"
+    },
+    {
+        "title": "A Machine Learning based Approach to Detect the Ethereum Fraud Transactions with Limited Attributes",
+        "authors": [
+            "R. Aziz",
+            "Mohammed Farhan Baluch",
+            "Sarthak Patel",
+            "Pavan Kumar"
+        ],
+        "published_year": 2022,
+        "abstract": "Abstract Ethereum smart contracts have recently received new commercial applications and a lot of attention from the scientific community. Ethereum eliminates the requirement for a trusted third party by allowing untrusted parties to expose contract details in computer code. Nonetheless, as online commerce grows, plenty of fraudulent activities, such as money laundering, bribery, and phishing, emerge as major threats to trade security. For correctly recognizing fraudulent transactions, this paper developed a Light Gradient Boosting Machine (LGBM) technique-based model. The modified LGBM model optimized the parameters of Light GBM using the Euclidean distant structured estimation approach. This paper also examines the performance of different popular models such as Random Forest (RF), Multi-Layer Perceptron (MLP), Logistic Regression, k-Nearest Neighbors (KNN), XGBoost, Support Vector Classification (SVC), and ADAboost with limited features and compares their performance metrics with the proposed model for Ethereum fraudulent activity classification. A comparative performance evaluation matrices scores of different popular models along with the proposed model demonstrated the applicability of the proposed approach. The modified LGBM algorithms and RF models demonstrate the best performance compared to other models with the highest accuracies, while the modified LGBM algorithm has a slightly superior performance of 99.17 percent compared to the RF model's 98.26 percent. Abstract Ethereum smart contracts have recently received new commercial applications and a lot of attention from the scienti ﬁ c community. Ethereum eliminates the requirement for a trusted third party by allowing untrusted parties to expose contract details in computer code. Nonetheless, as online commerce grows, plenty of fraudulent activities, such as money laundering, bribery, and phishing, emerge as major threats to trade security. For correctly recognizing fraudulent transactions, this paper developed a Light Gradient Boosting Machine (LGBM) technique-based model. The modi ﬁ ed LGBM model optimized the parameters of Light GBM using the Euclidean distant structured estimation approach. This paper also examines the performance of different popular models such as Random Forest (RF), Multi-Layer Perceptron (MLP), Logistic Regression, k-Nearest Neighbors (KNN), XGBoost, Support Vector Classi ﬁ cation (SVC), and ADAboost with limited features and compares their performance metrics with the proposed model for Ethereum fraudulent activity classi ﬁ cation. A comparative performance evaluation matrices scores of different popular models along with the proposed model demonstrated the applicability of the proposed approach. The modi ﬁ ed LGBM algorithms and RF models demonstrate the best performance compared to other models with the highest accuracies, while the modi ﬁ ed LGBM algorithm has a slightly superior performance of 99.17 percent compared to the RF model ' s 98.26 percent.",
+        "url": "https://www.semanticscholar.org/paper/569091336d672e9c6a846c5915cf798f575d9ff2",
+        "citations": 16,
+        "venue": "Karbala International Journal of Modern Science"
+    },
+    {
+        "title": "Ethereum Fraud Detection with Heterogeneous Graph Neural Networks",
+        "authors": [
+            "H. Kanezashi",
+            "T. Suzumura",
+            "Xin Liu",
+            "Takahiro Hirofuchi"
+        ],
+        "published_year": 2022,
+        "abstract": "While transactions with cryptocurrencies such as Ethereum are becoming more prevalent, fraud and other criminal transactions are not uncommon. Graph analysis algorithms and machine learning techniques detect suspicious transactions that lead to phishing in large transaction networks. Many graph neural network (GNN) models have been proposed to apply deep learning techniques to graph structures. Although there is research on phishing detection using GNN models in the Ethereum transaction network, models that address the scale of the number of vertices and edges and the imbalance of labels have not yet been studied. In this paper, we compared the model performance of GNN models on the actual Ethereum transaction network dataset and phishing reported label data to exhaustively compare and verify which GNN models and hyperparameters produce the best accuracy. Specifically, we evaluated the model performance of representative homogeneous GNN models which consider single-type nodes and edges and heterogeneous GNN models which support different types of nodes and edges. We showed that heterogeneous models had better model performance than homogeneous models. In particular, the RGCN model achieved the best performance in the overall metrics.",
+        "url": "https://www.semanticscholar.org/paper/38d50a199c6b674bb03474a346d2da593c7a53b3",
+        "citations": 13,
+        "venue": "arXiv.org"
+    },
+    {
+        "title": "A Game of NFTs: Characterizing NFT Wash Trading in the Ethereum Blockchain",
+        "authors": [
+            "Massimo La Morgia",
+            "Alessandro Mei",
+            "Alberto Maria Mongardini",
+            "E. Nemmi"
+        ],
+        "published_year": 2022,
+        "abstract": "The Non-Fungible Token (NFT) market in the Ethereum blockchain experienced explosive growth in 2021, with a monthly trade volume reaching $6 billion in January 2022. However, concerns have emerged about possible wash trading, a form of market manipulation in which one party repeatedly trades an NFT to inflate its volume artificially. Our research examines the effects of wash trading on the NFT market in Ethereum from the beginning until January 2022, using multiple approaches. We find that wash trading affects 5.66% of all NFT collections, with a total artificial volume of $3,406,110,774. We look at two ways to profit from wash trading: Artificially increasing the price of the NFT and taking advantage of the token reward systems provided by some marketplaces. Our findings show that exploiting the token reward systems of NFTMs is much more profitable (mean gain of successful operations is $1.055M on LooksRare), more likely to succeed (more than 80% of operations), and less risky than reselling an NFT at a higher price using wash trading (50% of activities result in a loss). Our research highlights that wash trading is frequent in Ethereum and that NFTMs should implement protective mechanisms to stop such illicit behavior.",
+        "url": "https://www.semanticscholar.org/paper/3d2431d6f968d8aefd81d05e9251ee9acd1525f6",
+        "citations": 13,
+        "venue": "IEEE International Conference on Distributed Computing Systems"
+    },
+    {
+        "title": "Decentralized On-Chain Data Access via Smart Contracts in Ethereum Blockchain",
+        "authors": [
+            "Mohd Sameen Chishti",
+            "Farhan Sufyan",
+            "Amit Banerjee"
+        ],
+        "published_year": 2022,
+        "abstract": "Smart contracts in Ethereum blockchain network are self-executable scripts used for managing tokenized assets and access rights between different entities on the blockchain network. They are significant addition to blockchain technology for achieving data transparency and reliability in maintaining the digital relationship between two or more entities. However, the smart contract is in its nascent stage and suffers from various limitations, including immutability and code secrecy. In this paper, we address the inability of smart contracts to access the on-chain data. The smart contract currently fetches the on-chain data by taking external oracle assistance, which can be compromised to influence the customers. To address the issue, we propose a decentralized mechanism for accessing the blockchain data directly from the smart contracts by indexing single or multiple parameters of a transaction in each block using the Merkle-Patricia Trie (MPT). The idea is to increase the data transparency of blockchain applications. The paper provides a sequential search methodology that can retrieve transactions from <inline-formula> <tex-math notation=\"LaTeX\">${N}$ </tex-math></inline-formula> blocks, satisfying specific conditions, in <inline-formula> <tex-math notation=\"LaTeX\">${O}$ </tex-math></inline-formula>(<inline-formula> <tex-math notation=\"LaTeX\">${N}$ </tex-math></inline-formula>). The complexity is further reduced to <inline-formula> <tex-math notation=\"LaTeX\">${O}$ </tex-math></inline-formula>(<italic>N/k</italic>) by partitioning the blockchain data into <inline-formula> <tex-math notation=\"LaTeX\">${k}$ </tex-math></inline-formula> disjoint subsets to achieve parallelism in the search procedure. We experimentally verify the effectiveness of the proposed methodology with a case study on the Ethereum blockchain data.",
+        "url": "https://www.semanticscholar.org/paper/70b334a3de7792542022cf7a128a07398d87636a",
+        "citations": 13,
+        "venue": "IEEE Transactions on Network and Service Management"
+    },
+    {
+        "title": "InvCon: A Dynamic Invariant Detector for Ethereum Smart Contracts",
+        "authors": [
+            "Ye Liu",
+            "Yi Li"
+        ],
+        "published_year": 2022,
+        "abstract": "Smart contracts are self-executing computer programs deployed on blockchain to enable trustworthy exchange of value without the need of a central authority. With the absence of documentation and specifications, routine tasks such as program understanding, maintenance, verification, and validation, remain challenging for smart contracts. In this paper, we propose a dynamic invariant detection tool, InvCon, for Ethereum smart contracts to mitigate this issue. The detected invariants can be used to not only support the reverse engineering of contract specifications, but also enable standard-compliance checking for contract implementations. InvCon provides a Web-based interface and a demonstration video of it is available at: https://youtu.be/Y1QBHjDSMYk.",
+        "url": "https://www.semanticscholar.org/paper/2e6558281c1b4dd300040cfe2be0f5a814ef1846",
+        "citations": 15,
+        "venue": "International Conference on Automated Software Engineering"
+    },
+    {
+        "title": "Ethereum’s Peer-to-Peer Network Monitoring and Sybil Attack Prevention",
+        "authors": [
+            "Jean-Philippe Eisenbarth",
+            "Thibault Cholez",
+            "Olivier Perrin"
+        ],
+        "published_year": 2022,
+        "abstract": null,
+        "url": "https://www.semanticscholar.org/paper/9d4d9ab0a9e4ebe27c17c03963fe378021989b3c",
+        "citations": 14,
+        "venue": "Journal of Network and Systems Management"
+    },
+    {
+        "title": "Cryptocurrencies on the road to sustainability: Ethereum paving the way for Bitcoin",
+        "authors": [
+            "Alex De Vries"
+        ],
+        "published_year": 2022,
+        "abstract": null,
+        "url": "https://www.semanticscholar.org/paper/308d91e05292ad7c45731e767094fabc825499d5",
+        "citations": 54,
+        "venue": "Patterns"
+    },
+    {
+        "title": "The Merge Implications on the Electricity Consumption and Carbon Footprint of the Ethereum Network",
+        "authors": [],
+        "published_year": 2022,
+        "abstract": "and its reduction of electricity consumption and carbon footprint by over 99.98 % marks a significant milestone in both the Ethereum network as well as for the entirety of the cryptocurrency space. After the Merge has taken place, a major step towards environmental sustainability has been done",
+        "url": "https://www.semanticscholar.org/paper/d17f423a5c23f282c73016b8a60713a81da1f864",
+        "citations": 10,
+        "venue": ""
+    },
+    {
+        "title": "Transactions fees optimization in the Ethereum blockchain",
+        "authors": [
+            "A. Laurent",
+            "L. Brotcorne",
+            "B. Fortz"
+        ],
+        "published_year": 2022,
+        "abstract": null,
+        "url": "https://www.semanticscholar.org/paper/f71275571a0087c45eff9f97ceba677d7dfb0374",
+        "citations": 30,
+        "venue": "Blockchain: Research and Applications"
+    },
+    {
+        "title": "Mitigating Frontrunning Attacks in Ethereum",
+        "authors": [
+            "M. Varun",
+            "Balaji Palanisamy",
+            "S. Sural"
+        ],
+        "published_year": 2022,
+        "abstract": "With the rising popularity of Ethereum, there is also an uptick in the number of smart contract based decentralized applications (DApps). Consequently, Ethereum transaction volume is growing steadily over the last few years, but so are the various types of attacks on it. In Ethereum vulnerable smart contracts are always taken advantage of by adversaries. One of the primary ways of exploiting Ethereum with malicious intent is through frontrunning attacks that take advantage of the waiting time of transactions in the pending pool by adjusting the gas price. Attackers willing to execute such attacks constantly monitor the pending transaction pool and try to frontrun transactions. Mitigating such attacks is a critical step for ensuring secure DApp operations in Ethereum. In this paper, we propose a model-based attack detection and prevention scheme. We extract specific features for each transaction and transform each transaction into a feature vector which is then analyzed by a machine learning model to detect if it is a frontrunning attack transaction or not in real time. Extensive experiments on a large dataset of transactions establish the effectiveness of our approach.",
+        "url": "https://www.semanticscholar.org/paper/b02b54f2bff195b58bb97a03bf32401c0a708238",
+        "citations": 12,
+        "venue": "International Symposium on Blockchain and Secure Critical Infrastructure"
+    },
+    {
+        "title": "TSGN: Transaction Subgraph Networks Assisting Phishing Detection in Ethereum",
+        "authors": [
+            "Jinhuan Wang",
+            "Pengtao Chen",
+            "Xinyao Xu",
+            "Jia-Jian Wu",
+            "Meng Shen",
+            "Qi Xuan",
+            "Xiaoniu Yang"
+        ],
+        "published_year": 2022,
+        "abstract": "Due to the decentralized and public nature of the Blockchain ecosystem, the malicious activities on the Ethereum platform impose immeasurable losses for the users. Existing phishing scam detection methods mostly rely only on the analysis of original transaction networks, which is difficult to dig deeply into the transaction patterns hidden in the network structure of transaction interaction. In this paper, we propose a \\underline{T}ransaction \\underline{S}ub\\underline{G}raph \\underline{N}etwork (TSGN) based phishing accounts identification framework for Ethereum. We first extract transaction subgraphs for target accounts and then expand these subgraphs into corresponding TSGNs based on the different mapping mechanisms. In order to make our model incorporate more important information about real transactions, we encode the transaction attributes into the modeling process of TSGNs, yielding two variants of TSGN, i.e., Directed-TSGN and Temporal-TSGN, which can be applied to the different attributed networks. Especially, by introducing TSGN into multi-edge transaction networks, the Multiple-TSGN model proposed is able to preserve the temporal transaction flow information and capture the significant topological pattern of phishing scams, while reducing the time complexity of modeling large-scale networks. Extensive experimental results show that TSGN models can provide more potential information to improve the performance of phishing detection by incorporating graph representation learning.",
+        "url": "https://www.semanticscholar.org/paper/9e60d37b9f5a2a44482e4c8a98b41f49fb2ec234",
+        "citations": 12,
+        "venue": "arXiv.org"
+    },
+    {
+        "title": "ROS-Ethereum: A Convenient Tool to Bridge ROS and Blockchain (Ethereum)",
+        "authors": [
+            "Shenhui Zhang",
+            "M. Tang",
+            "Xiulai Li",
+            "Boyi Liu",
+            "Bo Zhang",
+            "Fei-fei Hu",
+            "Sirui Ni",
+            "Jieren Cheng"
+        ],
+        "published_year": 2022,
+        "abstract": "Robot Operating System (ROS) has received widespread utilization with the development of robotics, self-driving, etc., recently. Meanwhile, the other technology blockchain is frequently applied to various fields with its trustworthy characteristics and immutability in data storage. However, ROS has no ability to interact with the blockchain, which hinders research in related fields. Therefore, we wonder if we can develop a convenient tool to bridge ROS and blockchain. Inspired by this, we propose ROS-Ethereum. It bridges ROS and Ethereum, a widely used blockchain platform. ROS-Ethereum is based on the User Datagram Protocol (UDP) communication mechanism and the SM algorithm family along with Ethereum technology. Simply put, ROS-Ethereum allows users to invoke the contract when interacting with the blockchain, which makes this process easier and safer. We conduct experiments in real robots to verify the effectiveness of ROS-Ethereum and evaluate it from the following metrics: (1) the encryption efficiency and stability of the algorithm and (2) ROS-Ethereum transaction response time and packet loss rate.",
+        "url": "https://www.semanticscholar.org/paper/6c2d7e2d41ae3327d3b3518a0ad02ec30c85bff3",
+        "citations": 9,
+        "venue": "Security and Communication Networks"
+    },
+    {
+        "title": "Comparison of Hyperledger Fabric and Ethereum Blockchain",
+        "authors": [
+            "Zishan Zhao"
+        ],
+        "published_year": 2022,
+        "abstract": "Blockchain technology has received wide attention from researchers and scientists. Blockchain technology is also upgrading all the time. When the original Bitcoin was created, it laid the groundwork for the emergence of Ethereum. Now new federation chains like Hyperledger Fabric are growing fast. Ethereum and fabric are the two representatives. Permissioned and private blockchain platforms are increasingly used in today’s industry. Different blockchain implementations use different consensus protocols. This article briefly compares Hyperledger Fabric and Ethereum from several aspects such as consensus and smart contacts.",
+        "url": "https://www.semanticscholar.org/paper/d84b9fa4cc9acbaf119f71725b461abfc6a401a4",
+        "citations": 9,
+        "venue": "International Symposium on Parameterized and Exact Computation"
+    },
+    {
+        "title": "An Empirical Study on Ethereum Private Transactions and the Security Implications",
+        "authors": [
+            "Xing-Long Lyu",
+            "Mengya Zhang",
+            "Xiaokuan Zhang",
+            "Jianyu Niu",
+            "Yinqian Zhang",
+            "Zhiqiang Lin"
+        ],
+        "published_year": 2022,
+        "abstract": "Recently, Decentralized Finance (DeFi) platforms on Ethereum are booming, and numerous traders are trying to capitalize on the opportunity for maximizing their benefits by launching front-running attacks and extracting Miner Extractable Values (MEVs) based on information in the public mempool. To protect end users from being harmed and hide transactions from the mempool, private transactions, a special type of transactions that are sent directly to miners, were invented. Private transactions have a high probability of being packed to the front positions of a block and being added to the blockchain by the target miner, without going through the public mempool, thus reducing the risk of being attacked by malicious entities. Despite the good intention of inventing private transactions, due to their stealthy nature, private transactions have also been used by attackers to launch attacks, which has a negative impact on the Ethereum ecosystem. However, existing works only touch upon private transactions as by-products when studying MEV, while a systematic study on private transactions is still missing. To fill this gap and paint a complete picture of private transactions, we take the first step towards investigating the private transactions on Ethereum. In particular, we collect large-scale private transaction datasets and perform analysis on their characteristics, transaction costs and miner profits, as well as security impacts. This work provides deep insights on different aspects of private transactions.",
+        "url": "https://www.semanticscholar.org/paper/cc1059dd315c317907f5c5aa1a1503e91c631446",
+        "citations": 11,
+        "venue": "arXiv.org"
+    },
+    {
+        "title": "Applicability of Intrusion Detection System on Ethereum Attacks: A Comprehensive Review",
+        "authors": [
+            "A. H. H. Kabla",
+            "Mohammed Anbar",
+            "S. Manickam",
+            "Taief Alaa Al-Amiedy",
+            "Peterson Bernabe Cruspe",
+            "Ahmed K. Al-Ani",
+            "Shankar Karuppayah"
+        ],
+        "published_year": 2022,
+        "abstract": "For many reasons, Ethereum attracts more investors, researchers, and even scammers; this is the first platform that enables the new Decentralized Applications (DApps) to run on top of the blockchain network. However, the rich semantics and applications of DApps inevitably introduce many security issues that have grabbed significant attention from industry and academics due to their destructive impact on DApps in recent years. Therefore, there is a vital need to study the applicability of Intrusion Detection System in detecting Ethereum-based attacks. Hence, this paper is among the first comprehensive review that studies the applicability of IDS in detecting Ethereum-based attacks. In addition, this paper lists all the potential attacks on Ethereum passing through the vulnerabilities that cause those attacks and ending with the consequences of each attack. Furthermore, this paper analyses all the IDS-based related works of Ethereum attacks detection since the Ethereum platform was launched in 2015. Finally, this paper discusses the open issues regarding vulnerabilities and attacks, challenges, and future directions.",
+        "url": "https://www.semanticscholar.org/paper/36ef0fa6c85664b2061a6565bfb535273a8ee0e8",
+        "citations": 9,
+        "venue": "IEEE Access"
+    },
+    {
+        "title": "Heterogeneous Feature Augmentation for Ponzi Detection in Ethereum",
+        "authors": [
+            "Chengxiang Jin",
+            "Jie Jin",
+            "Jiajun Zhou",
+            "Jiajing Wu",
+            "Qi Xuan"
+        ],
+        "published_year": 2022,
+        "abstract": "While blockchain technology triggers new industrial and technological revolutions, it also brings new challenges. Recently, a large number of new scams with a “blockchain” sock-puppet continue to emerge, such as Ponzi schemes, money laundering, etc., seriously threatening financial security. Existing fraud detection methods in blockchain mainly concentrate on manual features and graph analytics, which first construct a homogeneous transaction graph using partial blockchain data and then use graph analytics to detect anomaly, resulting in a loss of pattern information. In this brief, we mainly focus on Ponzi scheme detection and propose HFAug, a generic Heterogeneous Feature Augmentation module that can capture the heterogeneous information associated with account behavior patterns and can be combined with existing Ponzi detection methods. HFAug learns the metapath-based behavior characteristics in an auxiliary heterogeneous interaction graph, and aggregates the heterogeneous features to corresponding account nodes in the homogeneous one where the Ponzi detection methods are performed. Comprehensive experimental results demonstrate that our HFAug can help existing Ponzi detection methods achieve significant performance improvement on Ethereum datasets, suggesting the effectiveness of heterogeneous information on detecting Ponzi schemes.",
+        "url": "https://www.semanticscholar.org/paper/dc3cf8a2c2042699ed566c8226c056c85879b4d5",
+        "citations": 23,
+        "venue": "IEEE Transactions on Circuits and Systems - II - Express Briefs"
+    },
+    {
+        "title": "Scaling Ethereum 2.0s Cross-Shard Transactions with Refined Data Structures",
+        "authors": [
+            "A. Kudzin",
+            "Kentaroh Toyoda",
+            "S. Takayama",
+            "A. Ishigame"
+        ],
+        "published_year": 2022,
+        "abstract": "(1) Background: To solve the blockchain scaling issue, sharding has been proposed; however, this approach has its own scaling issue: the cross-shard communication method. To resolve the cross-shard communication scaling issue, rollups have been proposed and are being investigated. However, they also have their own scaling limitations, in particular, the degree of compression they can apply to transactions (TXs) affecting how many TXs can be included in one block. (2) Methods: In this paper, we propose a series of novel data structures for the compiling of cross-shard TXs sent using rollups for both public and private Ethereum. Our proposal removes redundant fields, consolidates repeated fields, and compresses any remaining fields in the rollup, modifying its data structure to compress the address, gas, and value fields. (3) Results: We have shown that our proposals can accommodate more cross-shard TXs in a block by reducing the TX size by up to 65% and 97.6% compared to the state-of-the-art in public and private Ethereum, respectively. This compression in TX size results in an over 2× increase in transactions per block (TPB) for our proposals targeting both types of Ethereum. (4) Conclusions: Our proposals will mitigate the scaling issue in a sharded blockchain that utilizes rollups for cross-shard communication. In particular, it will enable such sharded Ethereum networks to be deployed for large-scale decentralized systems.",
+        "url": "https://www.semanticscholar.org/paper/c2a4e9d581b4c39958920a1b8031d18f0d362a01",
+        "citations": 8,
+        "venue": "Cryptogr."
+    },
+    {
+        "title": "Automating ETL and Mining of Ethereum Blockchain Network",
+        "authors": [
+            "Voon Hou Su",
+            "Sourav Sen Gupta",
+            "Arijit Khan"
+        ],
+        "published_year": 2022,
+        "abstract": "The popularity of blockchain technology led to the development of many web platforms with different functionalities. Ethereum, a decentralized, open-source blockchain featuring smart contracts, introduces an interesting ecosystem of human users and autonomous agents (the contracts). It is the most actively used blockchain platform, hosting ether, the second largest cryptocurrency by market capitalization, as its native store of value. The Ethereum blockchain contains a vast amount of user-to-user, user-to-contract, contract-to -user, and contract-to-contract interactions that can be modeled as complex networks. To mine these interactions as graphs through a preferred analytics toolbox, an end-user has to extract, transform, and load (ETL) the required data into the desired network format. However, it is costly and time-consuming to manage the ETL pipeline for the massive and complex blockchain data. To support research in this domain, we develop an end-to-end, automated tool - EtherNet, which performs ETL tasks from a single source of truth (Google BigQuery), and provides graph equivalent representations for visualization and mining on the entire Ethereum blockchain network.",
+        "url": "https://www.semanticscholar.org/paper/36a7080cef7195a238734b79d25b9fbe8ffa848c",
+        "citations": 8,
+        "venue": "Web Search and Data Mining"
+    },
+    {
+        "title": "Performance Evaluation of Ethereum and Hyperledger Fabric Blockchain Platforms",
+        "authors": [
+            "P. Abhishek",
+            "D. Narayan",
+            "Hunain Altaf",
+            "P. Somashekar"
+        ],
+        "published_year": 2022,
+        "abstract": "The evolution of blockchain has revolutionized the field of security and decentralization. Blockchain enables secure information storage and transfer because to its strong security features and the trust it offers. The users can have authenticity and trust because of the immutability. The two popular open-source blockchain platforms are Ethereum and Hyperledger Fabric. Ethereum is a public blockchain platform that enables secure peer-to-peer applications like crypto-currency and smart contracts. Ethereum has grown a reputation for dependability as a result of big developers taking an interest in it and contributing over time. Hyperledger is a permissioned blockchain platform used by enterprises to mainly induce the power of blockchain in creating immutable ledgers and keep transactions discrete among business entities. The effectiveness and scalability of both private and public networks must be evaluated and assessed. In this paper, we compare and analyse the performance of the hyperledger and ethereum networks. To further fine-tune the configuration parameters and comprehend the performance variances that occur, we developed real-time simulations and built blockchain networks on the Ubuntu OS. By changing the blockchain parameters, it was possible to measure the time it took to group the transactions into a block, the size of the overall block that comprises the bundled transactions, and the latency to construct the blocks. The findings show that when compared to public blockchain networks, private blockchain networks are more robust in performance, have lower latency, and charge no transaction fees",
+        "url": "https://www.semanticscholar.org/paper/2603f882e09025bc51f0cb970c63e2ee3cc09666",
+        "citations": 7,
+        "venue": "International Conference on Computing Communication and Networking Technologies"
+    }
+]

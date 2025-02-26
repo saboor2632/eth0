@@ -1,0 +1,232 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: none;
+    --sidebar-foreground: none;
+    --sidebar-primary: none;
+    --sidebar-primary-foreground: none;
+    --sidebar-accent: none;
+    --sidebar-accent-foreground: none;
+    --sidebar-border: none;
+    --sidebar-ring: none;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-gray-50 text-gray-900 min-h-screen overflow-x-hidden m-0 p-0;
+  }
+
+  /* Fix the container styles */
+  .container {
+    @apply mx-auto px-4 sm:px-6 lg:px-8 w-full;
+  }
+
+  @screen sm {
+    .container {
+      @apply max-w-[640px];
+    }
+  }
+
+  @screen md {
+    .container {
+      @apply max-w-[768px];
+    }
+  }
+
+  @screen lg {
+    .container {
+      @apply max-w-[1024px];
+    }
+  }
+
+  /* Add responsive text utilities */
+  .text-responsive {
+    @apply text-sm sm:text-base md:text-lg;
+  }
+
+  /* Add responsive spacing utilities */
+  .spacing-responsive {
+    @apply p-4 sm:p-6 md:p-8;
+  }
+
+  /* Add responsive grid utilities */
+  .grid-responsive {
+    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8;
+  }
+
+  /* Add responsive flex utilities */
+  .flex-responsive {
+    @apply flex flex-col sm:flex-row items-center gap-4 sm:gap-6 md:gap-8;
+  }
+}
+
+/* Add responsive sidebar styles */
+@layer components {
+  .sidebar {
+    @apply fixed top-0 left-0 h-full 
+           w-full sm:w-64 md:w-72 
+           bg-gray-50 dark:bg-gray-900 
+           text-gray-900 dark:text-gray-100
+           transform transition-transform duration-300 ease-in-out
+           z-40 overflow-y-auto;
+  }
+
+  .sidebar.closed {
+    @apply -translate-x-full sm:translate-x-0;
+  }
+
+  /* Main content area adjustment */
+  .main-content {
+    @apply ml-0 sm:ml-64 md:ml-72 
+           transition-all duration-300 ease-in-out
+           min-h-screen w-full;
+  }
+
+  /* Responsive padding for content */
+  .content-padding {
+    @apply p-4 sm:p-6 md:p-8;
+  }
+
+  /* Responsive button sizes */
+  .btn {
+    @apply px-3 py-1.5 sm:px-4 sm:py-2 md:px-6 md:py-3
+           text-sm sm:text-base md:text-lg;
+  }
+
+  /* Responsive card styles */
+  .card-responsive {
+    @apply rounded-lg shadow-md
+           p-4 sm:p-6 md:p-8
+           bg-white dark:bg-gray-800;
+  }
+
+  .btn-primary {
+    @apply px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-sm p-4 sm:p-6;
+  }
+
+  .input-area {
+    @apply w-full rounded-lg border border-gray-200 p-3 focus:outline-none focus:ring-2 focus:ring-blue-500;
+  }
+
+  /* Add this new style for the input area */
+  .input-container {
+    @apply bg-white rounded-xl p-4 shadow-sm;
+    min-height: 180px; /* Base height */
+  }
+
+  @screen sm {
+    .input-container {
+      min-height: auto; /* Reset on larger screens */
+    }
+  }
+
+  .floating-buttons {
+    @apply flex flex-col gap-3 sm:gap-4;
+    
+    @screen sm {
+      @apply bottom-8 right-8;
+    }
+  }
+}
+
+/* Add responsive utilities for dark mode */
+.dark {
+  /* ... existing dark mode variables ... */
+}
+
+/* Add responsive layout helpers */
+@layer utilities {
+  .hide-on-mobile {
+    @apply hidden sm:block;
+  }
+
+  .show-on-mobile {
+    @apply block sm:hidden;
+  }
+
+  .responsive-padding {
+    @apply px-4 sm:px-6 md:px-8 py-3 sm:py-4 md:py-6;
+  }
+
+  .responsive-margin {
+    @apply m-4 sm:m-6 md:m-8;
+  }
+}

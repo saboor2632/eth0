@@ -1,0 +1,95 @@
+# Logs
+# Python virtual environment
+venv/
+env/
+ENV/
+.env/
+.venv/
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.env
+node_modules
+dist
+dist-ssr
+*.local
+dist/
+venv/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Large file types
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.iso
+*.dmg
+
+# Media files
+*.mp4
+*.mov
+*.avi
+*.wmv
+*.flv
+*.mkv
+*.mp3
+*.wav
+*.flac
+
+# Image files (if they're large)
+*.psd
+*.ai
+*.sketch
+*.xcf
+
+# Database files
+*.sqlite
+*.db
+*.sql
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Cache directories
+.cache/
+.npm/
+.next/
+.nuxt/
+.vuepress/dist
+.serverless/
+.fusebox/
+.dynamodb/
