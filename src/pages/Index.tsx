@@ -14,7 +14,7 @@ interface FloatingButton {
 const Index = () => {
   const [input, setInput] = useState("");
   const [response, setResponse] = useState("AI response will appear here...");
-  const [selectedDataset, setSelectedDataset] = useState<"bounties" | "vitalik" | "rekt" | "ethdenver" | null>(null);
+  const [selectedDataset, setSelectedDataset] = useState<"bounties" | "vitalik" | "rekt" | "ethdenver">("ethdenver");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -141,7 +141,7 @@ const Index = () => {
           { 
             label: "Get Vitalik's perspective", 
             action: () => handleAction(
-              "I'd like to understand Vitalik's strategic vision. For this conversation, focus on providing insights about last conversation,based on drawing from Vitalik's writings, his thinking and perspectives."
+              "I'd like to understand Vitalik's strategic vision. For this conversation, focus on providing insights about Ethereum's ecosystem, governance, and future directions, drawing from Vitalik's writings and perspectives. Let's start with: What do you see as Ethereum's most crucial developments in the next few years?"
             ) 
           }
         ];
@@ -242,6 +242,12 @@ const Index = () => {
               <h2 className="text-sm font-medium text-gray-500 uppercase tracking-wider px-4">Brainstorm</h2>
               <div className="space-y-3">
                 <StickyNote 
+                  color="purple"
+                  onClick={() => setSelectedDataset("ethdenver")}
+                >
+                  Chat w/ ETHDenver 2025
+                </StickyNote>
+                <StickyNote 
                   color="red" 
                   onClick={() => setSelectedDataset("vitalik")}
                 >
@@ -252,12 +258,6 @@ const Index = () => {
                   onClick={() => setSelectedDataset("bounties")}
                 >
                   Chat w/ ETHGlobal Bounties
-                </StickyNote>
-                <StickyNote 
-                  color="purple"
-                  onClick={() => setSelectedDataset("ethdenver")}
-                >
-                  Chat w/ ETHDenver 2025
                 </StickyNote>
               </div>
             </div>
