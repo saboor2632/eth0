@@ -1,5 +1,6 @@
 # Logs
 # Python virtual environment
+.env
 venv/
 env/
 ENV/

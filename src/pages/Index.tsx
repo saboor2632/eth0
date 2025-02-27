@@ -1,68 +1,116 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Logo } from "@/components/Logo";
 import { StickyNote } from "@/components/StickyNote";
 import { AIResponse } from "@/components/AIResponse";
 import { InputArea } from "@/components/InputArea";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
+import ReactMarkdown from 'react-markdown';
 
 interface FloatingButton {
   label: string;
   action: () => void;
 }
 
+interface ChatHistory {
+  ethdenver: string[];
+  vitalik: string[];
+  bounties: string[];
+  rekt: string[];
+}
+
 const Index = () => {
   const [input, setInput] = useState("");
-  const [response, setResponse] = useState("AI response will appear here...");
   const [selectedDataset, setSelectedDataset] = useState<"bounties" | "vitalik" | "rekt" | "ethdenver">("ethdenver");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [statusMessage, setStatusMessage] = useState("You are chatting with ETHDenver 2025...");
+  const [chatHistory, setChatHistory] = useState<ChatHistory>({
+    ethdenver: [],
+    vitalik: [],
+    bounties: [],
+    rekt: []
+  });
+  const chatContainerRef = useRef<HTMLDivElement>(null);
+
+  // Auto scroll to bottom when new messages arrive
+  useEffect(() => {
+    if (chatContainerRef.current) {
+      chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
+    }
+  }, [chatHistory]);
+
+  // Update status message when dataset changes or loading state changes
+  useEffect(() => {
+    if (!isLoading) {
+      const newStatus = `You are chatting with ${
+        selectedDataset === "ethdenver" ? "ETHDenver 2025" :
+        selectedDataset === "vitalik" ? "Vitalik AI" :
+        selectedDataset === "bounties" ? "ETHGlobal Bounties" :
+        "REKT AI"
+      }...`;
+      setStatusMessage(newStatus);
+    }
+  }, [selectedDataset, isLoading]);
 
   const handleSubmit = async () => {
-    if (!input || !selectedDataset) return;
-
+    if (isLoading) return;
     setIsLoading(true);
-    setResponse("Processing your request...");
+    setStatusMessage("Processing your request...");
 
     try {
-        const response = await fetch('/api/query', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                question: input,
-                chat_type: selectedDataset,
-                num_chunks: 30
-            }),
-        });
+      const response = await fetch('http://localhost:8000/api/query', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          question: input,
+          chat_type: selectedDataset,
+          num_chunks: 30
+        }),
+      });
 
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
 
-        const data = await response.json();
-        if (data.Answer) {
-            setResponse(data.Answer);
-        } else if (data.error) {
-            setResponse(`Error: ${data.error}`);
-        } else {
-            setResponse('Received unexpected response format from server');
-        }
-        
-        // Log the full response for debugging
-        console.log('Full API Response:', data);
-        
+      const data = await response.json();
+      if (data.Answer) {
+        setChatHistory(prev => ({
+          ...prev,
+          [selectedDataset]: [...prev[selectedDataset], data.Answer]
+        }));
+      } else if (data.error) {
+        setChatHistory(prev => ({
+          ...prev,
+          [selectedDataset]: [...prev[selectedDataset], `Error: ${data.error}`]
+        }));
+      } else {
+        setChatHistory(prev => ({
+          ...prev,
+          [selectedDataset]: [...prev[selectedDataset], 'Received unexpected response format from server']
+        }));
+      }
+      
+      // Log the full response for debugging
+      console.log('Full API Response:', data);
     } catch (error) {
-        console.error('Detailed error:', error);
-        if (error instanceof Error) {
-            setResponse(`Error: ${error.message}`);
-        } else {
-            setResponse('Error: Failed to get response from AI');
-        }
+      console.error('Detailed error:', error);
+      if (error instanceof Error) {
+        setChatHistory(prev => ({
+          ...prev,
+          [selectedDataset]: [...prev[selectedDataset], `Error: ${error.message}`]
+        }));
+      } else {
+        setChatHistory(prev => ({
+          ...prev,
+          [selectedDataset]: [...prev[selectedDataset], 'Error: Failed to get response from AI']
+        }));
+      }
     } finally {
-        setIsLoading(false);
-        setInput("");
+      setIsLoading(false);
+      setInput("");
     }
   };
 
@@ -70,46 +118,60 @@ const Index = () => {
     if (!selectedDataset) return;
     
     setIsLoading(true);
-    setResponse("Processing your request...");
+    setStatusMessage("Processing your request...");
 
     try {
-        const response = await fetch('/api/query', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                question: question,
-                chat_type: selectedDataset,
-                num_chunks: 30
-            }),
-        });
+      const response = await fetch('http://localhost:8000/api/query', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          question: question,
+          chat_type: selectedDataset,
+          num_chunks: 30
+        }),
+      });
 
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
 
-        const data = await response.json();
-        if (data.Answer) {
-            setResponse(data.Answer);
-        } else if (data.error) {
-            setResponse(`Error: ${data.error}`);
-        } else {
-            setResponse('Received unexpected response format from server');
-        }
-        
-        // Log the full response for debugging
-        console.log('Full API Response:', data);
-        
+      const data = await response.json();
+      if (data.Answer) {
+        setChatHistory(prev => ({
+          ...prev,
+          [selectedDataset]: [...prev[selectedDataset], data.Answer]
+        }));
+      } else if (data.error) {
+        setChatHistory(prev => ({
+          ...prev,
+          [selectedDataset]: [...prev[selectedDataset], `Error: ${data.error}`]
+        }));
+      } else {
+        setChatHistory(prev => ({
+          ...prev,
+          [selectedDataset]: [...prev[selectedDataset], 'Received unexpected response format from server']
+        }));
+      }
+      
+      // Log the full response for debugging
+      console.log('Full API Response:', data);
     } catch (error) {
-        console.error('Detailed error:', error);
-        if (error instanceof Error) {
-            setResponse(`Error: ${error.message}`);
-        } else {
-            setResponse('Error: Failed to get response from AI');
-        }
+      console.error('Detailed error:', error);
+      if (error instanceof Error) {
+        setChatHistory(prev => ({
+          ...prev,
+          [selectedDataset]: [...prev[selectedDataset], `Error: ${error.message}`]
+        }));
+      } else {
+        setChatHistory(prev => ({
+          ...prev,
+          [selectedDataset]: [...prev[selectedDataset], 'Error: Failed to get response from AI']
+        }));
+      }
     } finally {
-        setIsLoading(false);
+      setIsLoading(false);
     }
   };
 
@@ -180,6 +242,11 @@ const Index = () => {
     }
   };
 
+  const handleTabClick = (dataset: "ethdenver" | "vitalik" | "bounties" | "rekt") => {
+    console.log(`Tab clicked: ${dataset}`);
+    setSelectedDataset(dataset);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 bg-[url('/noise.png')] bg-repeat">
       <div className="container mx-auto px-4 py-4 sm:py-8 flex flex-col min-h-screen">
@@ -243,19 +310,22 @@ const Index = () => {
               <div className="space-y-3">
                 <StickyNote 
                   color="purple"
-                  onClick={() => setSelectedDataset("ethdenver")}
+                  onClick={() => handleTabClick("ethdenver")}
+                  isSelected={selectedDataset === "ethdenver"}
                 >
                   Chat w/ ETHDenver 2025
                 </StickyNote>
                 <StickyNote 
                   color="red" 
-                  onClick={() => setSelectedDataset("vitalik")}
+                  onClick={() => handleTabClick("vitalik")}
+                  isSelected={selectedDataset === "vitalik"}
                 >
                   Brainstorm with Vitalik AI
                 </StickyNote>
                 <StickyNote 
                   color="yellow" 
-                  onClick={() => setSelectedDataset("bounties")}
+                  onClick={() => handleTabClick("bounties")}
+                  isSelected={selectedDataset === "bounties"}
                 >
                   Chat w/ ETHGlobal Bounties
                 </StickyNote>
@@ -267,7 +337,8 @@ const Index = () => {
               <div className="space-y-3">
                 <StickyNote 
                   color="blue" 
-                  onClick={() => setSelectedDataset("rekt")}
+                  onClick={() => handleTabClick("rekt")}
+                  isSelected={selectedDataset === "rekt"}
                 >
                   Audit with REKT AI
                 </StickyNote>
@@ -277,17 +348,68 @@ const Index = () => {
 
           <div className="flex flex-col flex-1">
             <div className="flex-1 bg-white rounded-xl p-6 shadow-sm mb-4 lg:min-h-0 min-h-[60vh] relative">
-              {isLoading ? (
-                <div className="flex items-center justify-center space-x-2">
-                  <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-gray-900"></div>
-                  <p className="text-gray-500">Processing your request...</p>
-                </div>
-              ) : (
-                <p className="text-gray-500">{response}</p>
-              )}
-              
-              {/* Floating Buttons */}
-              <div className="absolute bottom-6 right-6 flex flex-col gap-3">
+              {/* Status message at top */}
+              <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-10">
+                <p className="centered-text bg-gray-100 px-4 py-2 rounded-lg text-sm text-gray-600 whitespace-nowrap">
+                  {isLoading ? "Processing your request..." : statusMessage}
+                </p>
+              </div>
+
+              {/* Adjusted chat container to start below status message */}
+              <div 
+                ref={chatContainerRef}
+                className="absolute top-20 left-6 right-6 bottom-20 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-200 scrollbar-track-transparent"
+              >
+                <AnimatePresence>
+                  {chatHistory[selectedDataset].map((msg, index) => (
+                    <motion.div
+                      key={`${selectedDataset}-${index}`}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0 }}
+                      transition={{ duration: 0.2 }}
+                      className="mb-4"
+                    >
+                      <div className="bg-gray-50 rounded-lg p-4 max-w-3xl mx-auto prose prose-sm">
+                        <ReactMarkdown
+                          components={{
+                            // Style code blocks
+                            code: ({ node, inline, className, children, ...props }) => {
+                              if (inline) {
+                                return <code className="bg-gray-100 rounded px-1" {...props}>{children}</code>
+                              }
+                              return (
+                                <div className="bg-gray-800 rounded-lg p-4 my-2">
+                                  <code className="text-white" {...props}>
+                                    {children}
+                                  </code>
+                                </div>
+                              )
+                            },
+                            // Style links
+                            a: ({ node, children, ...props }) => (
+                              <a className="text-blue-500 hover:text-blue-600" {...props}>
+                                {children}
+                              </a>
+                            ),
+                            // Style lists
+                            ul: ({ node, children, ...props }) => (
+                              <ul className="list-disc pl-4 my-2" {...props}>
+                                {children}
+                              </ul>
+                            ),
+                          }}
+                        >
+                          {msg}
+                        </ReactMarkdown>
+                      </div>
+                    </motion.div>
+                  ))}
+                </AnimatePresence>
+              </div>
+
+              {/* Floating action buttons - adjusted position */}
+              <div className="absolute bottom-6 right-6 flex flex-col gap-3 z-10">
                 {getFloatingButtons().map((button, index) => (
                   <motion.button
                     key={button.label}

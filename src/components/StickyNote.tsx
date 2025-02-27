@@ -1,14 +1,20 @@
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 interface StickyNoteProps {
   color: "blue" | "orange" | "red" | "yellow" | "purple";
   children: React.ReactNode;
   onClick?: () => void;
   className?: string;
+  isSelected?: boolean;
 }
 
-export const StickyNote = ({ color, children, onClick, className }: StickyNoteProps) => {
+export const StickyNote = ({ color, children, onClick, className, isSelected = false }: StickyNoteProps) => {
+  useEffect(() => {
+    console.log(`Tab with color ${color} isSelected: ${isSelected}`);
+  }, [isSelected, color]);
+
   const getColorClasses = (color: string) => {
     switch (color) {
       case "red":
@@ -28,10 +34,15 @@ export const StickyNote = ({ color, children, onClick, className }: StickyNotePr
 
   return (
     <motion.div
-      whileHover={{ scale: 1.02 }}
+      animate={{
+        scale: isSelected ? 0.98 : 1,
+        opacity: isSelected ? 0.8 : 1,
+        y: isSelected ? 2 : 0
+      }}
+      whileHover={{ scale: isSelected ? 0.98 : 1.02 }}
       whileTap={{ scale: 0.98 }}
       className={cn(
-        "p-4 rounded-lg shadow-lg backdrop-blur-sm cursor-pointer transition-colors",
+        "p-4 rounded-lg shadow-lg backdrop-blur-sm cursor-pointer",
         "border border-white/20",
         getColorClasses(color),
         className
