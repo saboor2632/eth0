@@ -32,6 +32,15 @@ interface SponsorProject {
   bounties: Bounty[];
 }
 
+// Remove the styled-components import and replace with CSS animation
+const floatingAnimation = `
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+`;
+
 const Index = () => {
   const [input, setInput] = useState("");
   const [selectedDataset, setSelectedDataset] = useState<"bounties" | "vitalik" | "rekt" | "ethdenver">("ethdenver");
@@ -49,6 +58,8 @@ const Index = () => {
   const [selectedBounties, setSelectedBounties] = useState<string[]>([]);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [currentProject, setCurrentProject] = useState<SponsorProject | null>(null);
+  const [isVitalikActive, setIsVitalikActive] = useState(false);
+  const [hasVitalikBeenCalled, setHasVitalikBeenCalled] = useState(false);
   
   const sponsorProjects: SponsorProject[] = [
     {
@@ -318,6 +329,37 @@ const Index = () => {
     return selectedBounties.some(b => b.startsWith(`${projectName}:`));
   };
 
+  const handleVitalikClick = () => {
+    if (!hasVitalikBeenCalled) {
+      // First time activation
+      setHasVitalikBeenCalled(true);
+      setIsVitalikActive(true);
+      setChatHistory(prev => ({
+        ...prev,
+        [selectedDataset]: [...prev[selectedDataset], {
+          type: 'system',
+          content: 'Vitalik AI has entered the chat'
+        }]
+      }));
+      setInput("Hi Vitalik AI, would you mind reviewing my project proposal above?");
+    } else {
+      // Toggle active state
+      const newActiveState = !isVitalikActive;
+      setIsVitalikActive(newActiveState);
+      
+      // Add appropriate message based on new state
+      setChatHistory(prev => ({
+        ...prev,
+        [selectedDataset]: [...prev[selectedDataset], {
+          type: 'system',
+          content: newActiveState 
+            ? 'Vitalik AI has entered the chat'
+            : 'Vitalik AI has left the chat'
+        }]
+      }));
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 bg-[url('/noise.png')] bg-repeat">
       <div className="container mx-auto px-4 py-4 sm:py-8 flex flex-col min-h-screen">
@@ -426,12 +468,12 @@ const Index = () => {
                 </p>
               </div>
 
-              {/* Chat container with adjusted bottom spacing */}
+              {/* Chat container with adjusted padding */}
               <div 
                 ref={chatContainerRef}
                 className="absolute top-20 left-6 right-6 bottom-32 overflow-y-auto 
                   scrollbar-thin scrollbar-thumb-gray-300 hover:scrollbar-thumb-gray-400 
-                  scrollbar-track-gray-100 pr-8"
+                  scrollbar-track-gray-100"
               >
                 <AnimatePresence>
                   {chatHistory[selectedDataset].map((msg, index) => (
@@ -441,44 +483,26 @@ const Index = () => {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0 }}
                       transition={{ duration: 0.2 }}
-                      className="mb-0.5"
+                      className="mb-4"
                     >
-                      <div className="bg-gray-50/80 backdrop-blur-sm rounded-lg p-4 mx-0.5 
-                        prose prose-sm prose-headings:text-gray-800 
-                        prose-p:text-gray-600 prose-p:leading-relaxed 
-                        prose-strong:text-gray-700 prose-strong:font-semibold
-                        prose-code:text-gray-800 prose-code:bg-gray-100/80
-                        prose-a:text-blue-600 hover:prose-a:text-blue-700
-                        shadow-sm"
-                      >
-                        <ReactMarkdown
-                          components={{
-                            code: ({ node, inline, className, children, ...props }) => {
-                              if (inline) {
-                                return <code className="bg-gray-100/80 rounded px-1.5 py-0.5 text-sm" {...props}>{children}</code>
-                              }
-                              return (
-                                <div className="bg-gray-800 rounded-lg p-4 my-2">
-                                  <code className="text-gray-100 text-sm" {...props}>
-                                    {children}
-                                  </code>
-                                </div>
-                              )
-                            },
-                            p: ({ children }) => (
-                              <p className="my-2 text-[15px] leading-relaxed">{children}</p>
-                            ),
-                            ul: ({ children }) => (
-                              <ul className="my-2 space-y-1 list-disc pl-4">{children}</ul>
-                            ),
-                            li: ({ children }) => (
-                              <li className="text-gray-600">{children}</li>
-                            )
-                          }}
+                      {typeof msg === 'object' && msg.type === 'system' ? (
+                        <div className="flex justify-center mt-4 mb-4">
+                          <span className="bg-gray-100 px-4 py-2 rounded-lg text-sm text-gray-600 whitespace-nowrap">
+                            {msg.content}
+                          </span>
+                        </div>
+                      ) : (
+                        <div className="bg-gray-50/80 backdrop-blur-sm rounded-lg p-4 
+                          prose prose-sm prose-headings:text-gray-800 
+                          prose-p:text-gray-600 prose-p:leading-relaxed 
+                          prose-strong:text-gray-700 prose-strong:font-semibold
+                          prose-code:text-gray-800 prose-code:bg-gray-100/80
+                          prose-a:text-blue-600 hover:prose-a:text-blue-700
+                          shadow-sm"
                         >
-                          {msg}
-                        </ReactMarkdown>
-                      </div>
+                          <ReactMarkdown>{msg}</ReactMarkdown>
+                        </div>
+                      )}
                     </motion.div>
                   ))}
                 </AnimatePresence>
@@ -518,23 +542,48 @@ const Index = () => {
                 </div>
               )}
 
-              {/* Floating action buttons with adjusted position */}
-              <div className="absolute bottom-6 right-6 flex items-center gap-3 z-20">
-                {chatHistory[selectedDataset].length > 0 && (
-                  <motion.button
-                    initial={{ opacity: 0, x: 20 }}
-                    animate={{ opacity: 1, x: 0 }}
+              {/* Vitalik AI bubble with CSS animation */}
+              {selectedDataset === "ethdenver" && chatHistory[selectedDataset].length > 0 && (
+                <motion.button
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  onClick={handleVitalikClick}
+                  className="group absolute bottom-6 right-6 z-20"
+                >
+                  <style>{floatingAnimation}</style>
+                  <div 
                     className={cn(
-                      "px-4 py-2 rounded-full text-sm font-medium shadow-lg",
-                      "bg-red-400/90 text-white hover:bg-red-500/90",
-                      "backdrop-blur-sm transition-all hover:scale-105"
+                      "relative",
+                      isVitalikActive && "ring-2 ring-purple-500 ring-offset-2 rounded-full"
                     )}
-                    onClick={() => handleVetWithVitalik()}
+                    style={{
+                      animation: 'float 3s ease-in-out infinite'
+                    }}
                   >
-                    Vet w/ Vitalik AI
-                  </motion.button>
-                )}
-              </div>
+                    <img 
+                      src="/vitalik-ai.png"
+                      alt="Vitalik AI"
+                      className={cn(
+                        "w-16 h-16 rounded-full shadow-lg transition-all duration-200",
+                        isVitalikActive 
+                          ? "brightness-100 scale-105" 
+                          : "brightness-90 hover:brightness-100 hover:scale-105"
+                      )}
+                    />
+                    {/* Tooltip */}
+                    <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 
+                      opacity-0 group-hover:opacity-100 transition-opacity
+                      whitespace-nowrap bg-gray-800 text-white text-sm px-3 py-1.5 rounded-lg
+                      pointer-events-none"
+                    >
+                      {isVitalikActive ? "Vitalik AI is active" : "Vet w/ Vitalik AI"}
+                      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full
+                        border-8 border-transparent border-t-gray-800"
+                      />
+                    </div>
+                  </div>
+                </motion.button>
+              )}
             </div>
 
             <div className="input-container">
