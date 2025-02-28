@@ -230,3 +230,15 @@
     @apply m-4 sm:m-6 md:m-8;
   }
 }
+
+.centered-text {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #4a4a4a; /* Adjust color as needed */
+  margin: 0.1rem;
+  font-weight: normal; /* Adjust font weight */
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 0.5rem 1rem;
+  border-radius: 8px; /* Rounded corners */
+  display: inline-block;
+}
