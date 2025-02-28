@@ -31,7 +31,7 @@ interface SponsorProject {
   amount: string;
   bounties: Bounty[];
 }
-
+// Testing the file
 // Remove the styled-components import and replace with CSS animation
 const floatingAnimation = `
   @keyframes float {
