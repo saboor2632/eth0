@@ -1129,6 +1129,7 @@ const Index = () => {
                 )}
               >
                 <AnimatePresence>
+                
                   {chatHistory[selectedDataset].map((msg, index) => (
                     <motion.div
                       key={`${selectedDataset}-${index}`}
