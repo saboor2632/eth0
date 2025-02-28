@@ -292,7 +292,7 @@ const Index = () => {
         { name: "IMPACT + PUBLIC GOODS", amount: "$15,000", description: "Build solutions for SDGs, public goods, ReFi" },
         { name: "DAOS + COMMUNITIES", amount: "$15,000", description: "Create DAOs, digital communities, governance solutions" },
         { name: "Celebrity Track Winner", amount: "$5,000", description: "Special prize awarded by celebrity judges during final ceremony" }
-      ]
+       ]
     },
     {
       name: "Polkadot",
@@ -1169,6 +1169,7 @@ const Index = () => {
                     hover:scrollbar-thumb-gray-400 scrollbar-track-gray-100">
                     <div className="flex flex-wrap gap-2 p-1">
                       {(selectedDataset === "ethdenver" ? sponsorProjects : bounties).map((project) => (
+
                         <button
                           key={project.name}
                           onClick={() => handleProjectClick(project)}
