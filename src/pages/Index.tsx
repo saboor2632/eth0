@@ -729,6 +729,11 @@ const Index = () => {
     }
   }, [selectedDataset, isLoading]);
 
+  // Reset Vitalik state when changing datasets
+  useEffect(() => {
+    setIsVitalikActive(false);
+  }, [selectedDataset]);
+
   const handleSubmit = async () => {
     if (isLoading) return;
     setIsLoading(true);
@@ -970,7 +975,13 @@ const Index = () => {
           content: 'Vitalik AI has entered the chat'
         }]
       }));
-      setInput("Hi Vitalik AI, would you mind reviewing my project proposal above?");
+      
+      // Set appropriate input based on the tab
+      if (selectedDataset === "ethdenver") {
+        setInput("Hi Vitalik AI, would you mind reviewing my project proposal above?");
+      } else if (selectedDataset === "bounties") {
+        setInput("Hi Vitalik AI, could you help evaluate which bounties would be most suitable for my project idea?");
+      }
     } else {
       // Toggle active state
       const newActiveState = !isVitalikActive;
@@ -1129,7 +1140,7 @@ const Index = () => {
                   "absolute top-20 left-6 right-6 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 hover:scrollbar-thumb-gray-400 scrollbar-track-gray-100",
                   // Adjust bottom space based on tab
                   (selectedDataset === "ethdenver" || selectedDataset === "bounties")
-                    ? "bottom-32" // More space for bounties panel
+                    ? "bottom-[200px]" // Increased from 180px to 220px for more padding
                     : "bottom-[0.2rem]" // Minimal space for REKT and Vitalik tabs
                 )}
               >
