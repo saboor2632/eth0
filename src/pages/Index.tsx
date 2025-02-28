@@ -19,10 +19,17 @@ interface ChatHistory {
   rekt: string[];
 }
 
-interface BountyCategory {
+interface Bounty {
   name: string;
   amount: string;
+  description: string;
+}
+
+interface SponsorProject {
+  name: string;
   color: string;
+  amount: string;
+  bounties: Bounty[];
 }
 
 const Index = () => {
@@ -38,15 +45,32 @@ const Index = () => {
     rekt: []
   });
   const chatContainerRef = useRef<HTMLDivElement>(null);
+  const [selectedProjects, setSelectedProjects] = useState<string[]>([]);
   const [selectedBounties, setSelectedBounties] = useState<string[]>([]);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [currentProject, setCurrentProject] = useState<SponsorProject | null>(null);
   
-  const bountyCategories: BountyCategory[] = [
-    { name: "ETHDenver 2025", amount: "$80K", color: "bg-blue-100 text-blue-600" },
-    { name: "Polkadot", amount: "$10K", color: "bg-green-100 text-green-600" },
-    { name: "EigenLayer", amount: "$50K", color: "bg-orange-100 text-orange-600" },
-    { name: "Story", amount: "$20K", color: "bg-indigo-100 text-indigo-600" },
-    { name: "zircuit", amount: "$18K", color: "bg-pink-100 text-pink-600" },
-    { name: "okto", amount: "$25K", color: "bg-purple-100 text-purple-600" },
+  const sponsorProjects: SponsorProject[] = [
+    {
+      name: "ETHDenver 2025",
+      amount: "$80K",
+      color: "bg-blue-100 text-blue-600",
+      bounties: [
+        { name: "Best DeFi Integration", amount: "$20K", description: "Create innovative DeFi solutions" },
+        { name: "Social Impact", amount: "$15K", description: "Projects focusing on social good" },
+        // ... more bounties
+      ]
+    },
+    {
+      name: "Polkadot",
+      amount: "$10K",
+      color: "bg-green-100 text-green-600",
+      bounties: [
+        { name: "Cross-chain Integration", amount: "$5K", description: "Build cross-chain applications" },
+        // ... more bounties
+      ]
+    },
+    // ... more projects
   ];
 
   // Auto scroll to bottom when new messages arrive
@@ -263,12 +287,35 @@ const Index = () => {
     setSelectedDataset(dataset);
   };
 
-  const toggleBounty = (bountyName: string) => {
-    setSelectedBounties(prev => 
-      prev.includes(bountyName) 
-        ? prev.filter(b => b !== bountyName)
-        : [...prev, bountyName]
-    );
+  const handleProjectClick = (project: SponsorProject) => {
+    setCurrentProject(project);
+    setIsDialogOpen(true);
+  };
+
+  const handleBountySelect = (bountyName: string, projectName: string) => {
+    setSelectedBounties(prev => {
+      const bountyId = `${projectName}:${bountyName}`;
+      const updated = prev.includes(bountyId) 
+        ? prev.filter(b => b !== bountyId)
+        : [...prev, bountyId];
+      
+      // Update input field with selected bounties with project names
+      if (updated.length > 0) {
+        const bountyList = updated.map(b => {
+          const [project, bounty] = b.split(':');
+          return `${bounty} (${project})`;
+        }).join(", ");
+        setInput(`I want to create a project using ${bountyList} bounties.`);
+      } else {
+        setInput("");
+      }
+      
+      return updated;
+    });
+  };
+
+  const isProjectSelected = (projectName: string) => {
+    return selectedBounties.some(b => b.startsWith(`${projectName}:`));
   };
 
   return (
@@ -437,26 +484,36 @@ const Index = () => {
                 </AnimatePresence>
               </div>
 
-              {/* Bounties section with reduced spacing */}
+              {/* Scrollable bounties section */}
               {selectedDataset === "ethdenver" && (
                 <div className="absolute bottom-6 left-6 right-6 bg-gray-50 rounded-lg p-3">
                   <h3 className="text-sm font-medium text-gray-700 mb-2">Available Bounties:</h3>
-                  <div className="flex flex-wrap gap-2">
-                    {bountyCategories.map((bounty) => (
-                      <button
-                        key={bounty.name}
-                        onClick={() => toggleBounty(bounty.name)}
-                        className={cn(
-                          "px-4 py-1.5 rounded-full text-sm font-medium transition-all",
-                          bounty.color,
-                          selectedBounties.includes(bounty.name) 
-                            ? "ring-2 ring-offset-2 ring-current" 
-                            : "hover:ring-2 hover:ring-offset-2 hover:ring-current/50"
-                        )}
-                      >
-                        {bounty.name} {bounty.amount && `${bounty.amount}`}
-                      </button>
-                    ))}
+                  <div className="max-h-32 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 
+                    hover:scrollbar-thumb-gray-400 scrollbar-track-gray-100">
+                    <div className="flex flex-wrap gap-2 p-1">
+                      {sponsorProjects.map((project) => (
+                        <button
+                          key={project.name}
+                          onClick={() => handleProjectClick(project)}
+                          className={cn(
+                            "px-4 py-1.5 rounded-full text-sm font-medium transition-all",
+                            "relative",
+                            project.color,
+                            isProjectSelected(project.name)
+                              ? "ring-2 ring-offset-2 ring-current" 
+                              : "hover:ring-2 hover:ring-offset-2 hover:ring-current/50"
+                          )}
+                        >
+                          {project.name} {project.amount}
+                          {isProjectSelected(project.name) && (
+                            <span className="absolute -top-1 -right-1 bg-green-500 text-white rounded-full p-0.5 
+                              w-5 h-5 flex items-center justify-center text-xs shadow-sm">
+                              ✓
+                            </span>
+                          )}
+                        </button>
+                      ))}
+                    </div>
                   </div>
                 </div>
               )}
@@ -491,6 +548,45 @@ const Index = () => {
           </div>
         </div>
       </div>
+
+      {/* Bounty Selection Dialog */}
+      {isDialogOpen && currentProject && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+          <div className="bg-white rounded-xl p-6 max-w-lg w-full mx-4 max-h-[80vh] overflow-y-auto">
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-lg font-semibold text-gray-800">
+                {currentProject.name} Bounties
+              </h2>
+              <button 
+                onClick={() => setIsDialogOpen(false)}
+                className="text-gray-500 hover:text-gray-700"
+              >
+                ✕
+              </button>
+            </div>
+            <div className="space-y-3">
+              {currentProject.bounties.map((bounty) => (
+                <div 
+                  key={bounty.name}
+                  className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50"
+                >
+                  <input
+                    type="checkbox"
+                    checked={selectedBounties.includes(`${currentProject.name}:${bounty.name}`)}
+                    onChange={() => handleBountySelect(bounty.name, currentProject.name)}
+                    className="h-4 w-4 rounded border-gray-300 text-blue-600"
+                  />
+                  <div>
+                    <h3 className="font-medium text-gray-800">{bounty.name}</h3>
+                    <p className="text-sm text-gray-600">{bounty.description}</p>
+                    <span className="text-sm font-medium text-blue-600">{bounty.amount}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
