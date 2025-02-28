@@ -19,6 +19,12 @@ interface ChatHistory {
   rekt: string[];
 }
 
+interface BountyCategory {
+  name: string;
+  amount: string;
+  color: string;
+}
+
 const Index = () => {
   const [input, setInput] = useState("");
   const [selectedDataset, setSelectedDataset] = useState<"bounties" | "vitalik" | "rekt" | "ethdenver">("ethdenver");
@@ -32,6 +38,16 @@ const Index = () => {
     rekt: []
   });
   const chatContainerRef = useRef<HTMLDivElement>(null);
+  const [selectedBounties, setSelectedBounties] = useState<string[]>([]);
+  
+  const bountyCategories: BountyCategory[] = [
+    { name: "ETHDenver 2025", amount: "$80K", color: "bg-blue-100 text-blue-600" },
+    { name: "Polkadot", amount: "$10K", color: "bg-green-100 text-green-600" },
+    { name: "EigenLayer", amount: "$50K", color: "bg-orange-100 text-orange-600" },
+    { name: "Story", amount: "$20K", color: "bg-indigo-100 text-indigo-600" },
+    { name: "zircuit", amount: "$18K", color: "bg-pink-100 text-pink-600" },
+    { name: "okto", amount: "$25K", color: "bg-purple-100 text-purple-600" },
+  ];
 
   // Auto scroll to bottom when new messages arrive
   useEffect(() => {
@@ -247,6 +263,14 @@ const Index = () => {
     setSelectedDataset(dataset);
   };
 
+  const toggleBounty = (bountyName: string) => {
+    setSelectedBounties(prev => 
+      prev.includes(bountyName) 
+        ? prev.filter(b => b !== bountyName)
+        : [...prev, bountyName]
+    );
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 bg-[url('/noise.png')] bg-repeat">
       <div className="container mx-auto px-4 py-4 sm:py-8 flex flex-col min-h-screen">
@@ -355,10 +379,12 @@ const Index = () => {
                 </p>
               </div>
 
-              {/* Adjusted chat container to start below status message */}
+              {/* Chat container with adjusted bottom spacing */}
               <div 
                 ref={chatContainerRef}
-                className="absolute top-20 left-6 right-6 bottom-20 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-200 scrollbar-track-transparent"
+                className="absolute top-20 left-6 right-6 bottom-32 overflow-y-auto 
+                  scrollbar-thin scrollbar-thumb-gray-300 hover:scrollbar-thumb-gray-400 
+                  scrollbar-track-gray-100 pr-8"
               >
                 <AnimatePresence>
                   {chatHistory[selectedDataset].map((msg, index) => (
@@ -368,36 +394,39 @@ const Index = () => {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0 }}
                       transition={{ duration: 0.2 }}
-                      className="mb-4"
+                      className="mb-0.5"
                     >
-                      <div className="bg-gray-50 rounded-lg p-4 max-w-3xl mx-auto prose prose-sm">
+                      <div className="bg-gray-50/80 backdrop-blur-sm rounded-lg p-4 mx-0.5 
+                        prose prose-sm prose-headings:text-gray-800 
+                        prose-p:text-gray-600 prose-p:leading-relaxed 
+                        prose-strong:text-gray-700 prose-strong:font-semibold
+                        prose-code:text-gray-800 prose-code:bg-gray-100/80
+                        prose-a:text-blue-600 hover:prose-a:text-blue-700
+                        shadow-sm"
+                      >
                         <ReactMarkdown
                           components={{
-                            // Style code blocks
                             code: ({ node, inline, className, children, ...props }) => {
                               if (inline) {
-                                return <code className="bg-gray-100 rounded px-1" {...props}>{children}</code>
+                                return <code className="bg-gray-100/80 rounded px-1.5 py-0.5 text-sm" {...props}>{children}</code>
                               }
                               return (
                                 <div className="bg-gray-800 rounded-lg p-4 my-2">
-                                  <code className="text-white" {...props}>
+                                  <code className="text-gray-100 text-sm" {...props}>
                                     {children}
                                   </code>
                                 </div>
                               )
                             },
-                            // Style links
-                            a: ({ node, children, ...props }) => (
-                              <a className="text-blue-500 hover:text-blue-600" {...props}>
-                                {children}
-                              </a>
+                            p: ({ children }) => (
+                              <p className="my-2 text-[15px] leading-relaxed">{children}</p>
                             ),
-                            // Style lists
-                            ul: ({ node, children, ...props }) => (
-                              <ul className="list-disc pl-4 my-2" {...props}>
-                                {children}
-                              </ul>
+                            ul: ({ children }) => (
+                              <ul className="my-2 space-y-1 list-disc pl-4">{children}</ul>
                             ),
+                            li: ({ children }) => (
+                              <li className="text-gray-600">{children}</li>
+                            )
                           }}
                         >
                           {msg}
@@ -408,30 +437,46 @@ const Index = () => {
                 </AnimatePresence>
               </div>
 
-              {/* Floating action buttons - adjusted position */}
-              <div className="absolute bottom-6 right-6 flex flex-col gap-3 z-10">
-                {getFloatingButtons().map((button, index) => (
+              {/* Bounties section with reduced spacing */}
+              {selectedDataset === "ethdenver" && (
+                <div className="absolute bottom-6 left-6 right-6 bg-gray-50 rounded-lg p-3">
+                  <h3 className="text-sm font-medium text-gray-700 mb-2">Available Bounties:</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {bountyCategories.map((bounty) => (
+                      <button
+                        key={bounty.name}
+                        onClick={() => toggleBounty(bounty.name)}
+                        className={cn(
+                          "px-4 py-1.5 rounded-full text-sm font-medium transition-all",
+                          bounty.color,
+                          selectedBounties.includes(bounty.name) 
+                            ? "ring-2 ring-offset-2 ring-current" 
+                            : "hover:ring-2 hover:ring-offset-2 hover:ring-current/50"
+                        )}
+                      >
+                        {bounty.name} {bounty.amount && `${bounty.amount}`}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Floating action buttons with adjusted position */}
+              <div className="absolute bottom-6 right-6 flex items-center gap-3 z-20">
+                {chatHistory[selectedDataset].length > 0 && (
                   <motion.button
-                    key={button.label}
                     initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: index * 0.1 }}
-                    onClick={button.action}
                     className={cn(
                       "px-4 py-2 rounded-full text-sm font-medium shadow-lg",
-                      "backdrop-blur-sm transition-all hover:scale-105",
-                      "disabled:opacity-50 disabled:cursor-not-allowed",
-                      selectedDataset === "vitalik" 
-                        ? "bg-red-400/90 text-white hover:bg-red-500/90"
-                        : selectedDataset === "ethdenver"
-                          ? "bg-purple-500/90 text-white hover:bg-purple-600/90"
-                          : "bg-yellow-100/90 text-gray-800 hover:bg-yellow-200/90"
+                      "bg-red-400/90 text-white hover:bg-red-500/90",
+                      "backdrop-blur-sm transition-all hover:scale-105"
                     )}
-                    disabled={isLoading}
+                    onClick={() => handleVetWithVitalik()}
                   >
-                    {button.label}
+                    Vet w/ Vitalik AI
                   </motion.button>
-                ))}
+                )}
               </div>
             </div>
 
