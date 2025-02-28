@@ -953,34 +953,18 @@ const Index = () => {
     return selectedBounties.some(b => b.startsWith(`${projectName}:`));
   };
 
-  const handleVitalikClick = () => {
-    if (!hasVitalikBeenCalled) {
-      // First time activation
-      setHasVitalikBeenCalled(true);
+  const handleVitalikClick = async () => {
+    if (!isVitalikActive && !hasVitalikBeenCalled) {
+      // Add system message when Vitalik enters
+      setChatHistory(prev => ({
+        ...prev,
+        [selectedDataset]: [
+          ...prev[selectedDataset],
+          { type: 'system', content: 'Vitalik has entered the chat!' }
+        ]
+      }));
       setIsVitalikActive(true);
-      setChatHistory(prev => ({
-        ...prev,
-        [selectedDataset]: [...prev[selectedDataset], {
-          type: 'system',
-          content: 'Vitalik AI has entered the chat'
-        }]
-      }));
-      setInput("Hi Vitalik AI, would you mind reviewing my project proposal above?");
-    } else {
-      // Toggle active state
-      const newActiveState = !isVitalikActive;
-      setIsVitalikActive(newActiveState);
-      
-      // Add appropriate message based on new state
-      setChatHistory(prev => ({
-        ...prev,
-        [selectedDataset]: [...prev[selectedDataset], {
-          type: 'system',
-          content: newActiveState 
-            ? 'Vitalik AI has entered the chat'
-            : 'Vitalik AI has left the chat'
-        }]
-      }));
+      setHasVitalikBeenCalled(true);
     }
   };
 
@@ -1125,7 +1109,7 @@ const Index = () => {
                   // Adjust bottom space based on tab
                   (selectedDataset === "ethdenver" || selectedDataset === "bounties")
                     ? "bottom-32" // More space for bounties panel
-                    : "bottom-[0.2rem]" // Minimal space for REKT and Vitalik tabs
+                    : "bottom-[2.5rem]" // Increased space for REKT and Vitalik tabs to prevent cut-off
                 )}
               >
                 <AnimatePresence>
