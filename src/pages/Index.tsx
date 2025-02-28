@@ -46,7 +46,7 @@ const Index = () => {
   const [selectedDataset, setSelectedDataset] = useState<"bounties" | "vitalik" | "rekt" | "ethdenver">("ethdenver");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  const [statusMessage, setStatusMessage] = useState("You are chatting with ETHDenver 2025 Bounties");
+  const [statusMessage, setStatusMessage] = useState("You are chatting with ETHDenver 2025");
   const [chatHistory, setChatHistory] = useState<ChatHistory>({
     ethdenver: [],
     vitalik: [],
@@ -97,7 +97,7 @@ const Index = () => {
   useEffect(() => {
     if (!isLoading) {
       const newStatus = `You are chatting with ${
-        selectedDataset === "ethdenver" ? "ETHDenver 2025 Bounties" :
+        selectedDataset === "ethdenver" ? "ETHDenver 2025" :
         selectedDataset === "vitalik" ? "Vitalik AI" :
         selectedDataset === "bounties" ? "ETHGlobal Bounties" :
         "REKT AI"
