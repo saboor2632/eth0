@@ -2,6 +2,13 @@ import CookieConsent from "react-cookie-consent";
 import type { AppProps } from 'next/app'
 import '../styles/globals.css'
 
+// Add type declaration for window.dataLayer
+declare global {
+  interface Window {
+    dataLayer: any[];
+  }
+}
+
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
@@ -20,12 +27,14 @@ export default function App({ Component, pageProps }: AppProps) {
         }}
         expires={150}
         onAccept={() => {
-          // Initialize GTM only after consent
-          window.dataLayer = window.dataLayer || [];
-          window.dataLayer.push({
-            'gtm.start': new Date().getTime(),
-            event: 'gtm.js'
-          });
+          // Add type check for window object
+          if (typeof window !== 'undefined') {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              'gtm.start': new Date().getTime(),
+              event: 'gtm.js'
+            });
+          }
         }}
       >
         This website uses cookies to enhance the user experience. See our{" "}
