@@ -735,7 +735,12 @@ const Index = () => {
     setStatusMessage("Processing your request...");
 
     try {
-      const response = await fetch('/api/query', {
+      // Use development URL in local environment, production URL otherwise
+      const baseUrl = process.env.NODE_ENV === 'development' 
+        ? 'http://localhost:8000'
+        : '';
+      
+      const response = await fetch(`${baseUrl}/api/query`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -797,7 +802,7 @@ const Index = () => {
     setStatusMessage("Processing your request...");
 
     try {
-      const response = await fetch('/api/query', {
+      const response = await fetch(`${window.location.origin}/api/query`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
