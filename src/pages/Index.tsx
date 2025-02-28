@@ -46,7 +46,7 @@ const Index = () => {
   const [selectedDataset, setSelectedDataset] = useState<"bounties" | "vitalik" | "rekt" | "ethdenver">("ethdenver");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  const [statusMessage, setStatusMessage] = useState("You are chatting with ETHDenver 2025...");
+  const [statusMessage, setStatusMessage] = useState("You are chatting with ETHDenver 2025 Bounties");
   const [chatHistory, setChatHistory] = useState<ChatHistory>({
     ethdenver: [],
     vitalik: [],
@@ -60,6 +60,8 @@ const Index = () => {
   const [currentProject, setCurrentProject] = useState<SponsorProject | null>(null);
   const [isVitalikActive, setIsVitalikActive] = useState(false);
   const [hasVitalikBeenCalled, setHasVitalikBeenCalled] = useState(false);
+  const [showVitalikBubbles, setShowVitalikBubbles] = useState(true);
+  const [showRektBubbles, setShowRektBubbles] = useState(true);
   
   const sponsorProjects: SponsorProject[] = [
     {
@@ -95,11 +97,11 @@ const Index = () => {
   useEffect(() => {
     if (!isLoading) {
       const newStatus = `You are chatting with ${
-        selectedDataset === "ethdenver" ? "ETHDenver 2025" :
+        selectedDataset === "ethdenver" ? "ETHDenver 2025 Bounties" :
         selectedDataset === "vitalik" ? "Vitalik AI" :
         selectedDataset === "bounties" ? "ETHGlobal Bounties" :
         "REKT AI"
-      }...`;
+      }`;
       setStatusMessage(newStatus);
     }
   }, [selectedDataset, isLoading]);
@@ -294,7 +296,6 @@ const Index = () => {
   };
 
   const handleTabClick = (dataset: "ethdenver" | "vitalik" | "bounties" | "rekt") => {
-    console.log(`Tab clicked: ${dataset}`);
     setSelectedDataset(dataset);
   };
 
@@ -357,6 +358,31 @@ const Index = () => {
             : 'Vitalik AI has left the chat'
         }]
       }));
+    }
+  };
+
+  const handleVitalikBubbleClick = (type: 'jam' | 'perspective') => {
+    const prompt = type === 'jam'
+      ? "Hi Vitalik, I'd love to brainstorm and explore an idea with you."
+      : "Hi Vitalik, I'd appreciate your perspective on something.";
+    
+    setInput(prompt);
+    setShowVitalikBubbles(false);
+  };
+
+  const handleRektBubbleClick = (type: 'security' | 'risk') => {
+    const prompt = type === 'security'
+      ? "Let's focus on security analysis. For this conversation, provide detailed technical security insights based on past incidents and vulnerabilities. Draw from the REKT database to offer specific examples and lessons learned. First question: What are the most critical security vulnerabilities that keep appearing in DeFi protocols?"
+      : "I want to understand DeFi risk assessment. For this conversation, focus on providing practical security advice and risk mitigation strategies, using real examples from past incidents. Let's begin with: What are the essential security practices every DeFi project should implement?";
+    
+    setInput(prompt);
+    setShowRektBubbles(false);
+  };
+
+  const handleKeyPress = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
+    if (e.key === 'Enter' && !e.shiftKey && !isLoading && input.trim()) {
+      e.preventDefault();
+      handleSubmit();
     }
   };
 
@@ -468,12 +494,16 @@ const Index = () => {
                 </p>
               </div>
 
-              {/* Chat container with adjusted padding */}
+              {/* Chat container with adjusted padding based on tab */}
               <div 
                 ref={chatContainerRef}
-                className="absolute top-20 left-6 right-6 bottom-32 overflow-y-auto 
-                  scrollbar-thin scrollbar-thumb-gray-300 hover:scrollbar-thumb-gray-400 
-                  scrollbar-track-gray-100"
+                className={cn(
+                  "absolute top-20 left-6 right-6 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 hover:scrollbar-thumb-gray-400 scrollbar-track-gray-100",
+                  // Adjust bottom space based on tab
+                  (selectedDataset === "ethdenver" || selectedDataset === "bounties")
+                    ? "bottom-32" // More space for bounties panel
+                    : "bottom-[0.2rem]" // Minimal space for REKT and Vitalik tabs
+                )}
               >
                 <AnimatePresence>
                   {chatHistory[selectedDataset].map((msg, index) => (
@@ -508,8 +538,8 @@ const Index = () => {
                 </AnimatePresence>
               </div>
 
-              {/* Scrollable bounties section */}
-              {selectedDataset === "ethdenver" && (
+              {/* Bounties panel - only for ETHDenver and Bounties tabs */}
+              {(selectedDataset === "ethdenver" || selectedDataset === "bounties") && (
                 <div className="absolute bottom-6 left-6 right-6 bg-gray-50 rounded-lg p-3">
                   <h3 className="text-sm font-medium text-gray-700 mb-2">Available Bounties:</h3>
                   <div className="max-h-32 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 
@@ -542,8 +572,9 @@ const Index = () => {
                 </div>
               )}
 
-              {/* Vitalik AI bubble with CSS animation */}
-              {selectedDataset === "ethdenver" && chatHistory[selectedDataset].length > 0 && (
+              {/* Vitalik AI bubble - now shows in both ETHDenver and Bounties tabs */}
+              {(selectedDataset === "ethdenver" || selectedDataset === "bounties") && 
+                chatHistory[selectedDataset].length > 0 && (
                 <motion.button
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
@@ -584,6 +615,64 @@ const Index = () => {
                   </div>
                 </motion.button>
               )}
+
+              {/* Action bubbles for Vitalik AI */}
+              {selectedDataset === "vitalik" && showVitalikBubbles && chatHistory[selectedDataset].length === 0 && (
+                <div className="absolute bottom-[1.5rem] right-6 flex flex-col gap-1.5 w-56">
+                  <motion.button
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.1 }}
+                    onClick={() => handleVitalikBubbleClick('jam')}
+                    className="bg-[#F08080] hover:bg-[#E57373] text-white py-1.5 px-3 rounded-full 
+                      text-sm font-medium text-center transition-all duration-200 
+                      shadow-sm hover:shadow-md"
+                  >
+                    Jam with Vitalik
+                  </motion.button>
+                  
+                  <motion.button
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2 }}
+                    onClick={() => handleVitalikBubbleClick('perspective')}
+                    className="bg-[#F08080] hover:bg-[#E57373] text-white py-1.5 px-3 rounded-full 
+                      text-sm font-medium text-center transition-all duration-200 
+                      shadow-sm hover:shadow-md"
+                  >
+                    Get Vitalik's perspective
+                  </motion.button>
+                </div>
+              )}
+
+              {/* Action bubbles for REKT AI */}
+              {selectedDataset === "rekt" && showRektBubbles && chatHistory[selectedDataset].length === 0 && (
+                <div className="absolute bottom-[1.5rem] right-6 flex flex-col gap-1.5 w-56">
+                  <motion.button
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.1 }}
+                    onClick={() => handleRektBubbleClick('security')}
+                    className="bg-[#3B82F6] hover:bg-[#2563EB] text-white py-1.5 px-3 rounded-full 
+                      text-sm font-medium text-center transition-all duration-200 
+                      shadow-sm hover:shadow-md"
+                  >
+                    Security Analysis
+                  </motion.button>
+                  
+                  <motion.button
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2 }}
+                    onClick={() => handleRektBubbleClick('risk')}
+                    className="bg-[#3B82F6] hover:bg-[#2563EB] text-white py-1.5 px-3 rounded-full 
+                      text-sm font-medium text-center transition-all duration-200 
+                      shadow-sm hover:shadow-md"
+                  >
+                    Risk Assessment
+                  </motion.button>
+                </div>
+              )}
             </div>
 
             <div className="input-container">
@@ -591,6 +680,7 @@ const Index = () => {
                 value={input} 
                 onChange={setInput} 
                 onSubmit={handleSubmit}
+                onKeyDown={handleKeyPress}
                 disabled={isLoading}
               />
             </div>

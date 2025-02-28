@@ -12,7 +12,6 @@ interface StickyNoteProps {
 
 export const StickyNote = ({ color, children, onClick, className, isSelected = false }: StickyNoteProps) => {
   useEffect(() => {
-    console.log(`Tab with color ${color} isSelected: ${isSelected}`);
   }, [isSelected, color]);
 
   const getColorClasses = (color: string) => {
